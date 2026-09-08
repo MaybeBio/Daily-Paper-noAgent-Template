@@ -1,0 +1,228 @@
+# 课题短名，用于产出文件名与 Issue 标题
+# 无序蛋白/相分离 ∪ × （蛋白质）互作 × 方法(限定深度学习、分子动力学、对接、预测等)
+# 对象x互作（重点性质）x方法
+topic: idp-interaction-ai
+
+# 抓取时间窗口（天），每周自动跑默认 7；手动跑可改 1
+window_days: 7
+
+# PubMed 的 ENTREZ_EMAIL（必填）/ NCBI_API_KEY（可选）从环境变量读，不写进文件
+#   GitHub Actions：repo Settings → Secrets and variables → Actions
+#   本地：export ENTREZ_EMAIL=you@example.com ，export NCBI_API_KEY=...
+
+platforms:
+  pubmed:
+    # 无序/相分离 ∪ × 互作 × 方法(限定)，词干 * 在引号短语末尾有效（实测单复数召回翻倍，注意单复数tiab是精确匹配的）
+    # ⚠️ 裸 "phase separation" 会命中材料/非生物（催化、沥青、光伏），故限定其必须同时出现蛋白类词；在蛋白质互作中加上凝聚物、相分离主题是必要的，当然可能会使搜得文献减少
+    # query: '(interaction*[tiab] OR interact*[tiab] OR bind*[tiab] OR complex*[tiab] OR partner*[tiab] OR "protein-protein interaction*"[tiab]) AND ("deep learning"[tiab] OR "machine learning"[tiab] OR "neural network*"[tiab] OR "graph neural network*"[tiab] OR transformer*[tiab] OR "language model*"[tiab] OR "molecular dynamics"[tiab] OR simulation*[tiab] OR docking[tiab] OR alphafold[tiab] OR "binding affinity"[tiab] OR prediction*[tiab])'
+    # 注意先收集mesh条目，再收集tiab
+    # mesh也许对最新文献不够及时，tiab是精确匹配，mesh是词义匹配，二者互补（mesh适合长期）
+    query: >
+      ( "Intrinsically Disordered Proteins"[Mesh] 
+      OR "intrinsically disordered protein*"[tiab] 
+      OR "intrinsically disordered region*"[tiab] 
+      OR "intrinsically disordered"[tiab] 
+      OR IDP[tiab] 
+      OR IDPs[tiab] 
+      OR IDR[tiab] 
+      OR IDRs[tiab] 
+      OR "disordered protein*"[tiab] 
+      OR "natively unfolded"[tiab] 
+      OR "unstructured protein*"[tiab] 
+      OR (LLPS[tiab] OR "biomolecular condensate*"[tiab] OR "phase separation"[tiab] AND (protein*[tiab] OR peptide*[tiab] OR biomolecular[tiab]))) 
+      AND 
+      ("Protein Interaction Maps"[Mesh] 
+      OR "Protein Interaction Domains and Motifs"[Mesh] 
+      OR interaction*[tiab] 
+      OR interact*[tiab] 
+      OR bind*[tiab] 
+      OR complex*[tiab] 
+      OR partner*[tiab] 
+      OR interface*[tiab] 
+      OR "protein-protein interaction*"[tiab]) 
+      AND 
+      ("Artificial Intelligence"[Mesh] 
+      OR "Deep Learning"[Mesh] 
+      OR "Machine Learning"[Mesh] 
+      OR "Neural Networks, Computer"[Mesh] 
+      OR "artificial intelligence"[tiab] 
+      OR "deep learning"[tiab] 
+      OR "machine learning"[tiab] 
+      OR "neural network*"[tiab] 
+      OR "transformer*"[tiab] 
+      OR "language model*"[tiab] 
+      OR "diffusion model*"[tiab] 
+      OR "generative*"[tiab] 
+      OR "graph neural network*"[tiab] 
+      OR "flow matching"[tiab] 
+      OR "molecular dynamics"[tiab] 
+      OR simulation*[tiab] 
+      OR docking[tiab] 
+      OR "binding affinity"[tiab] 
+      OR prediction*[tiab] 
+      OR alphafold[tiab] 
+      OR esmfold*[tiab] 
+      OR rosetta*[tiab] )
+  arxiv:
+    # arXiv 原生布尔：写 all: 字段形式原样透传（无 : 的纯词会被强制全 AND，OR 失效）
+    # 实测：IDP/LLPS 之类缩写容易与非声明科学类撞词，导致假阳性检索
+    # LLPS、凝聚物之类全删
+    # max_results：native 后端不加会翻整周全部命中 → 限速挂起；100/每周 足够覆盖
+    # ⚠️ 另外 加了互作限定之后，arXiv 相关性候选数大幅下降，也许会一周都没有，但是本topic本来就是搜集互作项，即使命中少，也要保留
+    max_results: 100
+    query: > 
+      (all:"intrinsically disordered protein" 
+      OR all:"intrinsically disordered region" 
+      OR all:"intrinsically disordered" 
+      OR all:"disordered protein" 
+      OR all:"natively unfolded"
+      OR all:"unstructured protein" 
+      OR all:"biomolecular condensate")
+      AND 
+      (all:"protein-protein interaction" 
+      OR all:interaction 
+      OR all:interact
+      OR all:bind
+      OR all:complex
+      OR all:partner 
+      OR all:interface)
+      AND 
+      (all:"deep learning" 
+      OR all:"machine learning" 
+      OR all:"neural network"
+      OR all:"graph neural network" 
+      OR all:"language model"
+      OR all:transformer 
+      OR all:"diffusion model" 
+      OR all:generative 
+      OR all:"flow matching"
+      OR all:"molecular dynamics" 
+      OR all:simulation 
+      OR all:docking 
+      OR all:"binding affinity"
+      OR all:prediction
+      OR all:alphafold 
+      OR all:esmfold 
+      OR all:rosetta)
+  biorxiv:
+    # 与 arXiv 同构的括号三段式（对象×互作×方法，纯短语、无字段前缀）
+    # 实测（2026-09-07）：
+    # 1. 必须保留括号、不能改平铺DNF：Europe PMC（Lucene）对无括号的 AND/OR 混排会拍平错乱（同一逻辑 query 实测：平铺 DNF=1 命中 vs 括号三段式=13 命中）→ 平铺只在 Crossref 客户端对、却弄坏唯一严格的 Europe PMC
+    # 括号三段式 = 把正确性押在 Europe PMC 上，是最优解
+    # 2. Europe PMC：原生支持括号布尔、严格三段式，实测精确吃满 query
+    #  Crossref 服务端 query.bibliographic：词袋相关性排序，无布尔能力（硬墙，改 pyPaperFlow 源码也补不了）
+    #  Crossref 客户端 basic_boolean_text_match：括号当字面词 → 查询退化成 25 词 OR（超集/过召回，只多不漏）
+    #  4 个边界短语因括号粘词落入永不命中子句（deep learning / biomolecular condensate / interface / rosetta），
+    #  biorxiv/medrxiv 由 Europe PMC 严格补上，仅 chemrxiv 暴露（窗内近 0）
+    # 3. 目前策略: Europe PMC 严格 + Crossref 超集 + 每周 Zotero 人工筛选 = 最优，维持括号三段式
+    query: >
+      ("intrinsically disordered protein"
+      OR "intrinsically disordered region"
+      OR "intrinsically disordered"
+      OR "disordered protein"
+      OR "natively unfolded"
+      OR "unstructured protein"
+      OR "biomolecular condensate")
+      AND
+      ("protein-protein interaction"
+      OR interaction
+      OR interact
+      OR bind
+      OR complex
+      OR partner
+      OR interface)
+      AND
+      ("deep learning"
+      OR "machine learning"
+      OR "neural network"
+      OR "graph neural network"
+      OR "language model"
+      OR transformer
+      OR "diffusion model"
+      OR generative
+      OR "flow matching"
+      OR "molecular dynamics"
+      OR simulation
+      OR docking
+      OR "binding affinity"
+      OR prediction
+      OR alphafold
+      OR esmfold
+      OR rosetta)
+  medrxiv:
+    # 与 bioRxiv 同串（同一 BioRxivFetcher，platform=medrxiv）
+    # 双平台混合：Europe PMC 严格 + Crossref 超集
+    query: >
+      ("intrinsically disordered protein"
+      OR "intrinsically disordered region"
+      OR "intrinsically disordered"
+      OR "disordered protein"
+      OR "natively unfolded"
+      OR "unstructured protein"
+      OR "biomolecular condensate")
+      AND
+      ("protein-protein interaction"
+      OR interaction
+      OR interact
+      OR bind
+      OR complex
+      OR partner
+      OR interface)
+      AND
+      ("deep learning"
+      OR "machine learning"
+      OR "neural network"
+      OR "graph neural network"
+      OR "language model"
+      OR transformer
+      OR "diffusion model"
+      OR generative
+      OR "flow matching"
+      OR "molecular dynamics"
+      OR simulation
+      OR docking
+      OR "binding affinity"
+      OR prediction
+      OR alphafold
+      OR esmfold
+      OR rosetta)
+  chemrxiv:
+    # 与 bioRxiv 同串（ChemRxiv Crossref prefix 10.26434）
+    # chemRxiv 只有 Crossref，Europe PMC 不收录
+    # （实测前缀 10.26434 无命中）→ 括号三段式无法严格，是唯一无 Europe PMC 覆盖的，4 个边界短语
+    # （deep learning / biomolecular condensate / interface / rosetta）在 Crossref 客户端会漏，但窗内近 0
+    # 目前策略：维持三段式语义对齐、接受噪声，每周 Zotero 筛
+    query: >
+      ("intrinsically disordered protein"
+      OR "intrinsically disordered region"
+      OR "intrinsically disordered"
+      OR "disordered protein"
+      OR "natively unfolded"
+      OR "unstructured protein"
+      OR "biomolecular condensate")
+      AND
+      ("protein-protein interaction"
+      OR interaction
+      OR interact
+      OR bind
+      OR complex
+      OR partner
+      OR interface)
+      AND
+      ("deep learning"
+      OR "machine learning"
+      OR "neural network"
+      OR "graph neural network"
+      OR "language model"
+      OR transformer
+      OR "diffusion model"
+      OR generative
+      OR "flow matching"
+      OR "molecular dynamics"
+      OR simulation
+      OR docking
+      OR "binding affinity"
+      OR prediction
+      OR alphafold
+      OR esmfold
+      OR rosetta)

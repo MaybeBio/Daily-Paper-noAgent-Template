@@ -1,0 +1,216 @@
+{
+  "identity": {
+    "pmid": "42681205",
+    "doi": "10.1007/978-1-0716-5372-2_14",
+    "title": "Prediction of Intrinsically Disordered Regions That Bind RNA with DisoRDPbind."
+  },
+  "content": {
+    "abstract": "A common cellular function of intrinsically disordered regions (IDRs) is molecular binding, which covers interactions with various partner molecules, including proteins, peptides, nucleic acids, lipids, and small molecules. While there are many computational predictors of binding IDRs, relatively few target IDRs that bind RNAs. We focus on one of the first tools designed to predict RNA-binding IDRs: DisoRDPbind. DisoRDPbind is available as an easy-to-use web server at http://biomine.cs.vcu.edu/servers/DisoRDPbind/ . We describe the predictive model employed by DisoRDPbind and discuss its predictive performance and runtime, which were recently measured in the second CAID (Critical Assessment of protein Intrinsic Disorder) experiment. We highlight the small computational footprint of DisoRDPbind, which allows for large/proteome-scale predictions. We detail how to use the web server interface of DisoRDPbind and provide an example to illustrate how to read and interpret its prediction results. While DisoRDPbind does not identify RNA chaperones directly, we present a case study of an RNA chaperone, HCV core protein, to illustrate the method's utility in studying RNA chaperones.",
+    "keywords": [
+      "Intrinsic disorder",
+      "Intrinsically disordered regions",
+      "Molecular recognition",
+      "Protein-RNA interactions"
+    ],
+    "mesh_terms": [
+      "*RNA/metabolism/chemistry",
+      "*Intrinsically Disordered Proteins/metabolism/chemistry",
+      "*Software",
+      "*Computational Biology/methods",
+      "*RNA-Binding Proteins/metabolism/chemistry",
+      "Protein Binding"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Peng, Zhenling",
+        "Kurgan, Lukasz"
+      ],
+      "short_names": [
+        "Peng Z",
+        "Kurgan L"
+      ],
+      "auids": [],
+      "affiliations": [
+        "MOE Frontiers Science Center for Nonlinear Expectations, Shandong University, Qingdao, China.",
+        "Research Center for Mathematics and Interdisciplinary Sciences, Shandong University, Qingdao, China.",
+        "Department of Computer Science, Virginia Commonwealth University, Richmond, VA, USA. lkurgan@vcu.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Peng, Zhenling",
+        "short_name": "Peng Z",
+        "identifiers": [],
+        "affiliations": [
+          "MOE Frontiers Science Center for Nonlinear Expectations, Shandong University, Qingdao, China.",
+          "Research Center for Mathematics and Interdisciplinary Sciences, Shandong University, Qingdao, China."
+        ]
+      },
+      {
+        "full_name": "Kurgan, Lukasz",
+        "short_name": "Kurgan L",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Computer Science, Virginia Commonwealth University, Richmond, VA, USA. lkurgan@vcu.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Methods in molecular biology (Clifton, N.J.)"
+    ],
+    "journal_abbrev": [
+      "Methods Mol Biol"
+    ],
+    "pub_date": "2026",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/02 05:36",
+    "fetched_at": "2026-09-08 15:20:36"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42681205",
+      "31889261",
+      "27787828",
+      "40728619",
+      "26109352",
+      "40728621",
+      "40728620",
+      "34905768",
+      "37709009",
+      "42598852",
+      "36458437",
+      "34290238",
+      "31870849",
+      "39576583",
+      "33291838",
+      "32621220",
+      "28589442",
+      "30298407",
+      "32696351",
+      "31521235",
+      "31207240",
+      "39032884",
+      "42635213",
+      "40944448",
+      "36851914",
+      "39237195",
+      "41500381",
+      "29425497",
+      "35098694",
+      "41419011",
+      "40133791",
+      "38166858",
+      "40631955",
+      "32860044",
+      "40441416",
+      "34487138",
+      "39576585",
+      "38048333",
+      "40133781",
+      "33352065",
+      "32696395",
+      "30099775",
+      "41534519",
+      "42288727",
+      "42150060",
+      "26297830",
+      "42059199",
+      "40650026",
+      "23912807",
+      "25424537",
+      "38079339",
+      "41714637",
+      "35883444",
+      "38701796",
+      "25391399",
+      "42095372",
+      "18831774",
+      "39353735",
+      "28381244",
+      "37740110",
+      "33875885",
+      "39576584",
+      "31510679",
+      "28349426",
+      "37140058",
+      "40544633",
+      "27048167",
+      "39811792",
+      "39833102",
+      "39576586",
+      "33866372",
+      "36315580",
+      "34487791",
+      "29076577",
+      "42276495",
+      "38917322",
+      "27179590",
+      "40133785",
+      "41378882",
+      "25286318",
+      "36833360",
+      "28369666",
+      "39571839",
+      "24106084",
+      "34894985",
+      "40828855",
+      "38987470",
+      "39589885",
+      "29843482",
+      "33779503",
+      "38705823",
+      "31441158",
+      "29080786",
+      "26090958",
+      "40574713",
+      "29360926",
+      "23942625",
+      "34390736",
+      "30400675",
+      "28934129"
+    ],
+    "review": [
+      "42681205",
+      "33291838",
+      "28589442",
+      "31521235",
+      "36851914",
+      "35098694",
+      "40650026",
+      "37740110",
+      "40544633",
+      "27048167",
+      "39811792",
+      "39833102",
+      "36833360",
+      "38705823",
+      "31441158"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1007/978-1-0716-5372-2_14",
+        "provider": "Springer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

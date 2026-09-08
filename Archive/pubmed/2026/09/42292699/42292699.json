@@ -1,0 +1,298 @@
+{
+  "identity": {
+    "pmid": "42292699",
+    "doi": "10.1016/j.bbrep.2026.102664",
+    "title": "RNA-protein complexes as key regulators of plant secondary metabolism: Biophysical interactions and functional significance."
+  },
+  "content": {
+    "abstract": "RNA-protein complexes (RNPs) are central regulators of post-transcriptional gene expression and are increasingly implicated in controlling when, where and to what extent specialised (secondary) metabolic pathways operate in plants. Relative to transcription factor-centred regulation, RNPs can modify pathway output rapidly by modulating mRNA processing, stability, localisation and translation, thereby enabling plants to adjust metabolite production on developmentally and environmentally relevant timescales. Many regulatory RNPs assemble into membraneless biomolecular condensates (e.g., stress granules and processing bodies) via liquid-liquid phase separation (LLPS), providing reversible mechanisms to sequester, protect or degrade transcripts, including those encoding enzymes and regulators of specialised metabolism. In addition, small RNA-guided silencing complexes (e.g., AGO-containing RISC) form well-defined RNP modules that post-transcriptionally regulate transcription factors and biosynthetic genes involved in phenylpropanoid/flavonoid and other pathways. Here, we synthesise current evidence linking RNP biology to specialised metabolism, explicitly distinguishing mechanistic evidence (e.g., direct binding with functional perturbation) from associative evidence (e.g., co-localisation or proteomic enrichment). We also summarise experimental and computational approaches for mapping plant RNA-protein interactions, including key limitations (crosslinking bias, antibody specificity and contamination) and emerging tools (enhanced RNA interactome capture, proximity labelling and deep-learning-assisted binding prediction). Finally, we highlight evidence gaps in non-model medicinal plants and propose a framework that integrates spatiotemporal transcriptomics, structural biology and RNP-centred engineering to improve plant biofactories and stress-resilient phytochemical production.",
+    "keywords": [
+      "RNA-Protein complexes",
+      "RNA-binding proteins",
+      "Secondary (specialised) metabolism",
+      "Stress granules",
+      "and liquid-liquid phase separation"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Ugwu, Okechukwu Paul-Chima",
+        "Ugwu, Melvin Nnaemeka",
+        "Onohuean, Hope",
+        "Rather, Hilal Ahmad",
+        "Usman, Ibe Michael"
+      ],
+      "short_names": [
+        "Ugwu OP",
+        "Ugwu MN",
+        "Onohuean H",
+        "Rather HA",
+        "Usman IM"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Research, Publication and Extension, Kampala International University, Kampala, Uganda.",
+        "Department of Research, Publication and Extension, Kampala International University, Kampala, Uganda.",
+        "Department of Medical Biochemistry, Faculty of Basic Medical Sciences, State University of Medical and Applied Science, Igbo Eno, Enugu, Nigeria.",
+        "Biopharmaceutics Unit, Department of Pharmacology and Toxicology, School of Pharmacy, Kampala International University Uganda, Western Campus, Ishaka-Bushenyi, Uganda.",
+        "Department of Biochemistry Kampala International University Uganda, Western Campus, Uganda.",
+        "Department of Human Anatomy Faculty of Biomedical Science Kampala International University, Uganda."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Ugwu, Okechukwu Paul-Chima",
+        "short_name": "Ugwu OP",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Research, Publication and Extension, Kampala International University, Kampala, Uganda."
+        ]
+      },
+      {
+        "full_name": "Ugwu, Melvin Nnaemeka",
+        "short_name": "Ugwu MN",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Research, Publication and Extension, Kampala International University, Kampala, Uganda.",
+          "Department of Medical Biochemistry, Faculty of Basic Medical Sciences, State University of Medical and Applied Science, Igbo Eno, Enugu, Nigeria."
+        ]
+      },
+      {
+        "full_name": "Onohuean, Hope",
+        "short_name": "Onohuean H",
+        "identifiers": [],
+        "affiliations": [
+          "Biopharmaceutics Unit, Department of Pharmacology and Toxicology, School of Pharmacy, Kampala International University Uganda, Western Campus, Ishaka-Bushenyi, Uganda."
+        ]
+      },
+      {
+        "full_name": "Rather, Hilal Ahmad",
+        "short_name": "Rather HA",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biochemistry Kampala International University Uganda, Western Campus, Uganda."
+        ]
+      },
+      {
+        "full_name": "Usman, Ibe Michael",
+        "short_name": "Usman IM",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Human Anatomy Faculty of Biomedical Science Kampala International University, Uganda."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Biochemistry and biophysics reports"
+    ],
+    "journal_abbrev": [
+      "Biochem Biophys Rep"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article",
+      "Review"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/06/15 12:48",
+    "fetched_at": "2026-09-07 13:05:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42292699",
+      "41704600",
+      "23912807",
+      "42475469",
+      "42276972",
+      "42444402",
+      "37720552",
+      "38175843",
+      "40878008",
+      "29312371",
+      "41964251",
+      "40286852",
+      "38419328",
+      "30197298",
+      "24649509",
+      "33296709",
+      "28396624",
+      "41782370",
+      "41624473",
+      "34227341",
+      "37772963",
+      "30587571",
+      "42383738",
+      "36920190",
+      "39006762",
+      "37337634",
+      "28315749",
+      "39356734",
+      "38526948",
+      "42243951",
+      "39672414",
+      "33799602",
+      "40051501",
+      "41457544",
+      "39702967",
+      "37019716",
+      "42526910",
+      "42507024",
+      "33898525",
+      "39909287",
+      "42196497",
+      "34772786",
+      "38446881",
+      "40804711",
+      "41801512",
+      "41480717",
+      "40598113",
+      "41903574",
+      "36712072",
+      "42108614",
+      "40291420",
+      "41828709",
+      "41860722",
+      "36321557",
+      "32405004",
+      "33450720",
+      "40796552",
+      "31883228",
+      "21971522",
+      "24945722",
+      "40421365",
+      "35138191",
+      "41346115",
+      "42523333",
+      "31941785",
+      "20332203",
+      "40759847",
+      "34179096",
+      "34271007",
+      "36227470",
+      "42360138",
+      "42335899",
+      "33942036",
+      "24965446",
+      "34233002",
+      "30288702",
+      "41311063",
+      "31628867",
+      "41216652",
+      "39964163",
+      "42293007",
+      "35303788",
+      "39460625",
+      "27317775",
+      "12169302",
+      "26308709",
+      "34585805",
+      "41665764",
+      "38733939",
+      "36646476",
+      "29444950",
+      "42437078",
+      "36716374",
+      "42302304",
+      "40157676",
+      "18034876",
+      "22118611",
+      "40943143",
+      "34671009",
+      "32546623"
+    ],
+    "review": [
+      "42292699",
+      "41704600",
+      "42444402",
+      "37720552",
+      "38175843",
+      "40878008",
+      "29312371",
+      "41964251",
+      "40286852",
+      "38419328",
+      "28396624",
+      "41782370",
+      "41624473",
+      "34227341",
+      "37772963",
+      "30587571",
+      "39006762",
+      "28315749",
+      "42243951",
+      "39672414",
+      "33799602",
+      "41457544",
+      "39702967",
+      "37019716",
+      "42526910",
+      "33898525",
+      "39909287",
+      "42196497",
+      "34772786",
+      "40804711",
+      "41480717",
+      "41903574",
+      "42108614",
+      "41860722",
+      "36321557",
+      "33450720",
+      "31883228",
+      "21971522",
+      "40421365",
+      "41346115",
+      "20332203",
+      "40759847",
+      "34271007",
+      "42360138",
+      "42335899",
+      "30288702",
+      "41311063",
+      "41216652",
+      "42293007",
+      "35303788",
+      "12169302",
+      "34585805",
+      "38733939",
+      "36646476",
+      "29444950",
+      "42437078",
+      "40157676",
+      "22118611",
+      "40943143"
+    ],
+    "pmc": [
+      "13261994"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2405-5808(26)00224-4",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42292699/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

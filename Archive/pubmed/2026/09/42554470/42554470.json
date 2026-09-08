@@ -1,0 +1,300 @@
+{
+  "identity": {
+    "pmid": "42554470",
+    "doi": "10.1128/spectrum.00724-26",
+    "title": "Short linear motifs-underexplored players driving Toxoplasma gondii infection."
+  },
+  "content": {
+    "abstract": "Pathogens infect hosts by interacting with host proteins and exploiting their functions to their advantage. Short linear motifs, small functional regions within intrinsically disordered protein regions, are common mediators of host-pathogen protein interactions. While motifs have been more extensively studied in viruses and bacteria, the extent to which eukaryotic unicellular parasites use motifs during infection remains poorly explored. Toxoplasma gondii is a widespread intracellular apicomplexan parasite capable of infecting all warm-blooded animals and invading any of their nucleated cells. Toxoplasma's secreted proteins are key in interacting with host proteins during infection, making them potential sources for motifs. To study the role of motifs in Toxoplasma gondii infection, we curated 19 known motif instances in Toxoplasma proteins from the scientific literature. To identify more motifs in Toxoplasma-secreted proteins, we developed a computational pipeline that predicts and annotates putative motif matches with structural and functional features. Using this approach, we identified 24,097 motif matches within 295 proteins from secretory organelles. We highlight strategies to further prioritize likely functional motif matches by focusing on integrin motifs, degrons, TRAF6-binding motifs, and 42 confirmed secreted proteins. We subjected peptides containing four predicted TRAF6-binding motifs to experimental validation, supporting the predicted motifs in the Toxoplasma proteins RON10 and GRA15. Our motif predictions provide a valuable resource for generating hypotheses and designing experiments to study infection mechanisms. The characterization of motifs in Toxoplasma will be key to understanding the molecular principles underlying its broad host range and more comprehensive apicomplexan infection strategies.IMPORTANCEToxoplasma gondii is a widely distributed intracellular parasite that achieves successful infection by interacting with different host cell proteins. Short linear motifs are small functional modules found in unstructured protein regions and recognized by folded protein domains. Given that unstructured protein regions are a common feature of Toxoplasma's proteins, we hypothesize that motifs play important roles during its infection cycle. Here, we highlight the role of motifs during the Toxoplasma host cell invasion cycle through a curated set of motif examples. Through a computational pipeline, we predict thousands of motifs in secreted proteins, outline strategies for working with these predictions, and finally experimentally test peptides containing a motif involved in the innate immune response, successfully supporting the potential binding of two motifs. Our work provides a resource for further motif testing in Toxoplasma proteins, aiming at understanding the molecular mechanisms of the organism's infection strategies and its broad host range.",
+    "keywords": [
+      "Toxoplasma gondii",
+      "host-pathogen interactions",
+      "protein-protein interactions",
+      "short linear motifs"
+    ],
+    "mesh_terms": [
+      "*Toxoplasma/genetics/metabolism/chemistry",
+      "*Protozoan Proteins/metabolism/genetics/chemistry",
+      "Animals",
+      "Amino Acid Motifs",
+      "*Toxoplasmosis/parasitology/metabolism/immunology",
+      "Humans",
+      "Host-Pathogen Interactions",
+      "Host-Parasite Interactions",
+      "Computational Biology",
+      "Protein Binding"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Alvarado Valverde, Jesus",
+        "Lapouge, Karine",
+        "Boergel, Arne",
+        "Remans, Kim",
+        "Luck, Katja",
+        "Gibson, Toby J"
+      ],
+      "short_names": [
+        "Alvarado Valverde J",
+        "Lapouge K",
+        "Boergel A",
+        "Remans K",
+        "Luck K",
+        "Gibson TJ"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-0752-1151",
+        "ORCID: 0000-0003-0620-9553",
+        "ORCID: 0000-0002-0323-6989",
+        "ORCID: 0000-0002-4394-7953",
+        "ORCID: 0000-0003-2336-9225",
+        "ORCID: 0000-0003-0657-5166"
+      ],
+      "affiliations": [
+        "Structural and Computational Biology Unit, European Molecular Biology Laboratory, Heidelberg, Germany. RINGGOLD: 9471. ROR: https://ror.org/01zjc6908",
+        "Faculty of Biosciences, Collaboration for a joint PhD degree between EMBL and Heidelberg University, Heidelberg, Germany. RINGGOLD: 98938. ROR: https://ror.org/04rcqnp59",
+        "Institute of Molecular Biology (IMB) gGmbH, Mainz, Germany. RINGGOLD: 378044. ROR: https://ror.org/05kxtq558",
+        "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany. RINGGOLD: 9471. ROR: https://ror.org/01zjc6908",
+        "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany. RINGGOLD: 9471. ROR: https://ror.org/01zjc6908",
+        "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany. RINGGOLD: 9471. ROR: https://ror.org/01zjc6908",
+        "Institute of Molecular Biology (IMB) gGmbH, Mainz, Germany. RINGGOLD: 378044. ROR: https://ror.org/05kxtq558",
+        "Structural and Computational Biology Unit, European Molecular Biology Laboratory, Heidelberg, Germany. RINGGOLD: 9471. ROR: https://ror.org/01zjc6908"
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Alvarado Valverde, Jesús",
+        "short_name": "Alvarado Valverde J",
+        "identifiers": [
+          "0000-0003-0752-1151"
+        ],
+        "affiliations": [
+          "Structural and Computational Biology Unit, European Molecular Biology Laboratory, Heidelberg, Germany.",
+          "Faculty of Biosciences, Collaboration for a joint PhD degree between EMBL and Heidelberg University, Heidelberg, Germany.",
+          "Institute of Molecular Biology (IMB) gGmbH, Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Lapouge, Karine",
+        "short_name": "Lapouge K",
+        "identifiers": [
+          "0000-0003-0620-9553"
+        ],
+        "affiliations": [
+          "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany."
+        ]
+      },
+      {
+        "full_name": "Boergel, Arne",
+        "short_name": "Boergel A",
+        "identifiers": [
+          "0000-0002-0323-6989"
+        ],
+        "affiliations": [
+          "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany."
+        ]
+      },
+      {
+        "full_name": "Remans, Kim",
+        "short_name": "Remans K",
+        "identifiers": [
+          "0000-0002-4394-7953"
+        ],
+        "affiliations": [
+          "Protein Expression and Purification Core Facility, European Molecular Biology Laboratory, Heidelberg, Germany."
+        ]
+      },
+      {
+        "full_name": "Luck, Katja",
+        "short_name": "Luck K",
+        "identifiers": [
+          "0000-0003-2336-9225"
+        ],
+        "affiliations": [
+          "Institute of Molecular Biology (IMB) gGmbH, Mainz, Germany."
+        ]
+      },
+      {
+        "full_name": "Gibson, Toby J",
+        "short_name": "Gibson TJ",
+        "identifiers": [
+          "0000-0003-0657-5166"
+        ],
+        "affiliations": [
+          "Structural and Computational Biology Unit, European Molecular Biology Laboratory, Heidelberg, Germany."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Microbiology spectrum"
+    ],
+    "journal_abbrev": [
+      "Microbiol Spectr"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/08/05 13:37",
+    "fetched_at": "2026-09-07 13:05:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42554470",
+      "37768053",
+      "32618271",
+      "34781732",
+      "31883450",
+      "35552534",
+      "34006649",
+      "39292011",
+      "29357375",
+      "18974850",
+      "32075880",
+      "35196797",
+      "39345210",
+      "41171058",
+      "31416833",
+      "39162521",
+      "38980070",
+      "40874616",
+      "39207098",
+      "21773979",
+      "19901027",
+      "29559568",
+      "31311877",
+      "31488510",
+      "30352931",
+      "40598570",
+      "27053129",
+      "30279285",
+      "34898650",
+      "39211799",
+      "31266861",
+      "37326431",
+      "40576341",
+      "32075881",
+      "11269320",
+      "41474161",
+      "42226980",
+      "28286325",
+      "17346309",
+      "31165984",
+      "28848228",
+      "23839215",
+      "34749525",
+      "15850804",
+      "25423901",
+      "29916065",
+      "21423671",
+      "27165797",
+      "41291278",
+      "34011689",
+      "24361285",
+      "30333181",
+      "39302131",
+      "40265926",
+      "27444499",
+      "32156805",
+      "15003840",
+      "36214684",
+      "15591057",
+      "31387907",
+      "24043761",
+      "39586398",
+      "32907954",
+      "40171158",
+      "26838724",
+      "33653884",
+      "27966671",
+      "35730903",
+      "39918324",
+      "33118234",
+      "10982850",
+      "22427839",
+      "40172222",
+      "27594426",
+      "31041194",
+      "37398161",
+      "19852836",
+      "31446366",
+      "16385407",
+      "24373221",
+      "22276154",
+      "39370205",
+      "28465425",
+      "33723040",
+      "18187410",
+      "42294622",
+      "29158278",
+      "23356236",
+      "36602948",
+      "33593973",
+      "24070999",
+      "32463830",
+      "40221584",
+      "31421715",
+      "24888565",
+      "40005546",
+      "41702285",
+      "39440975",
+      "35130726",
+      "39082802"
+    ],
+    "review": [
+      "42554470",
+      "35552534",
+      "21773979",
+      "11269320",
+      "28286325",
+      "17346309",
+      "39586398",
+      "33118234",
+      "31041194",
+      "31446366",
+      "16385407",
+      "24373221",
+      "39370205",
+      "31421715"
+    ],
+    "pmc": [
+      "13532356"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://journals.asm.org/doi/10.1128/spectrum.00724-26?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub  0pubmed",
+        "provider": "Atypon",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://medlineplus.gov/toxoplasmosis.html",
+        "provider": "MedlinePlus Health Information",
+        "category": "Medical",
+        "attribute": "free resource",
+        "linkname": "Toxoplasmosis"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42554470/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "identity": {
+    "pmid": "42696573",
+    "doi": "10.1126/sciadv.aeg3201",
+    "title": "Reconstitution of multistep recruitment of ULK1 to membranes in autophagy."
+  },
+  "content": {
+    "abstract": "The human Unc51-like kinase 1 (ULK1) autophagy-initiating complex consists of ULK1, FIP200, and the Hop/Rev7/Mad2 (HORMA) domain heterodimer ATG13:ATG101. Phosphatidylinositol 3-phosphate (PI3P) is essential to recruit ULK1 complex (ULK1C) to membranes for ULK1, but ULK1C subunits do not contain PI3P-binding domains. Here, we show that the ATG13:ATG101 dimer forms a complex with the PI3P-binding protein WD40 interacting with phosphoinositide protein 3 (WIPI3), as well as WIPI2. Bound to WIPI2 and WIPI3, ATG13:ATG101 inserts its Trp-Phe (WF) finger into the membrane. Molecular dynamics simulations show that WIPIs and the WF finger cooperatively stabilize the complex on membranes. Biochemical reconstitution and cell-based assays show that WIPI3:ATG13 engagement promotes ATG16L1 phosphorylation, autophagy, and mitophagy. A kinase domain (KD)-proximal Pro-Val-Pro (PVP) motif in the ULK1 intrinsically disordered region docks onto the ATG13:ATG101 HORMA dimer brings the ULK1 KD close to the membrane. The PVP motif is essential for in vitro ULK1 phosphorylation of ATG16L1 and important for autophagy and mitophagy. These data establish a stepwise pathway for recruitment of the ULK1 KD to the vicinity of the membrane surface.",
+    "keywords": [],
+    "mesh_terms": [
+      "*Autophagy-Related Protein-1 Homolog/metabolism/chemistry/genetics",
+      "*Autophagy",
+      "Humans",
+      "Autophagy-Related Proteins/metabolism/chemistry/genetics",
+      "Phosphorylation",
+      "Protein Binding",
+      "Vesicular Transport Proteins/metabolism/chemistry/genetics",
+      "*Intracellular Signaling Peptides and Proteins/metabolism/chemistry",
+      "*Cell Membrane/metabolism",
+      "Molecular Dynamics Simulation",
+      "Membrane Proteins/metabolism/chemistry",
+      "Phosphatidylinositol Phosphates/metabolism",
+      "Adaptor Proteins, Signal Transducing/metabolism/chemistry"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Duan, Yongjia",
+        "Lu, Ye",
+        "Paul, Sanjoy",
+        "Betz, Johannes",
+        "Wilhelm, Lea P",
+        "Cook, Annan S I",
+        "Ren, Xuefeng",
+        "Adriaenssens, Elias",
+        "Martens, Sascha",
+        "Ganley, Ian G",
+        "Hummer, Gerhard",
+        "Hurley, James H"
+      ],
+      "short_names": [
+        "Duan Y",
+        "Lu Y",
+        "Paul S",
+        "Betz J",
+        "Wilhelm LP",
+        "Cook ASI",
+        "Ren X",
+        "Adriaenssens E",
+        "Martens S",
+        "Ganley IG",
+        "Hummer G",
+        "Hurley JH"
+      ],
+      "auids": [
+        "ORCID: 0009-0001-7553-0124",
+        "ORCID: 0009-0001-6788-4205",
+        "ORCID: 0000-0001-5040-8002",
+        "ORCID: 0000-0003-0910-6576",
+        "ORCID: 0000-0001-5926-4666",
+        "ORCID: 0000-0001-6415-9107",
+        "ORCID: 0000-0002-4822-4316",
+        "ORCID: 0000-0001-9430-917X",
+        "ORCID: 0000-0003-3786-8199",
+        "ORCID: 0000-0003-1481-9407",
+        "ORCID: 0000-0001-7768-746X",
+        "ORCID: 0000-0001-5054-5445"
+      ],
+      "affiliations": [
+        "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany.",
+        "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany.",
+        "MRC Protein Phosphorylation and Ubiquitylation Unit, University of Dundee, Dundee, DD1 5EH, UK.",
+        "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Graduate Group in Biophysics, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Max Perutz Labs, Vienna Biocenter Campus (VBC), 1030 Vienna, Austria.",
+        "Max Perutz Labs, Department of Biochemistry and Cell Biology, University of Vienna, 1030 Vienna, Austria.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Max Perutz Labs, Vienna Biocenter Campus (VBC), 1030 Vienna, Austria.",
+        "Max Perutz Labs, Department of Biochemistry and Cell Biology, University of Vienna, 1030 Vienna, Austria.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "MRC Protein Phosphorylation and Ubiquitylation Unit, University of Dundee, Dundee, DD1 5EH, UK.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany.",
+        "Institute of Biophysics, Goethe University Frankfurt, 60438 Frankfurt am Main, Germany.",
+        "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+        "Graduate Group in Biophysics, University of California, Berkeley, Berkeley, CA 94720, USA.",
+        "Helen Wills Neuroscience Institute, University of California, Berkeley, Berkeley, CA 94720, USA."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Duan, Yongjia",
+        "short_name": "Duan Y",
+        "identifiers": [
+          "0009-0001-7553-0124"
+        ],
+        "affiliations": [
+          "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA."
+        ]
+      },
+      {
+        "full_name": "Lu, Ye",
+        "short_name": "Lu Y",
+        "identifiers": [
+          "0009-0001-6788-4205"
+        ],
+        "affiliations": [
+          "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA."
+        ]
+      },
+      {
+        "full_name": "Paul, Sanjoy",
+        "short_name": "Paul S",
+        "identifiers": [
+          "0000-0001-5040-8002"
+        ],
+        "affiliations": [
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany."
+        ]
+      },
+      {
+        "full_name": "Betz, Johannes",
+        "short_name": "Betz J",
+        "identifiers": [
+          "0000-0003-0910-6576"
+        ],
+        "affiliations": [
+          "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany."
+        ]
+      },
+      {
+        "full_name": "Wilhelm, Léa P",
+        "short_name": "Wilhelm LP",
+        "identifiers": [
+          "0000-0001-5926-4666"
+        ],
+        "affiliations": [
+          "MRC Protein Phosphorylation and Ubiquitylation Unit, University of Dundee, Dundee, DD1 5EH, UK."
+        ]
+      },
+      {
+        "full_name": "Cook, Annan S I",
+        "short_name": "Cook ASI",
+        "identifiers": [
+          "0000-0001-6415-9107"
+        ],
+        "affiliations": [
+          "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Graduate Group in Biophysics, University of California, Berkeley, Berkeley, CA 94720, USA."
+        ]
+      },
+      {
+        "full_name": "Ren, Xuefeng",
+        "short_name": "Ren X",
+        "identifiers": [
+          "0000-0002-4822-4316"
+        ],
+        "affiliations": [
+          "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA."
+        ]
+      },
+      {
+        "full_name": "Adriaenssens, Elias",
+        "short_name": "Adriaenssens E",
+        "identifiers": [
+          "0000-0001-9430-917X"
+        ],
+        "affiliations": [
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Max Perutz Labs, Vienna Biocenter Campus (VBC), 1030 Vienna, Austria.",
+          "Max Perutz Labs, Department of Biochemistry and Cell Biology, University of Vienna, 1030 Vienna, Austria."
+        ]
+      },
+      {
+        "full_name": "Martens, Sascha",
+        "short_name": "Martens S",
+        "identifiers": [
+          "0000-0003-3786-8199"
+        ],
+        "affiliations": [
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Max Perutz Labs, Vienna Biocenter Campus (VBC), 1030 Vienna, Austria.",
+          "Max Perutz Labs, Department of Biochemistry and Cell Biology, University of Vienna, 1030 Vienna, Austria."
+        ]
+      },
+      {
+        "full_name": "Ganley, Ian G",
+        "short_name": "Ganley IG",
+        "identifiers": [
+          "0000-0003-1481-9407"
+        ],
+        "affiliations": [
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "MRC Protein Phosphorylation and Ubiquitylation Unit, University of Dundee, Dundee, DD1 5EH, UK."
+        ]
+      },
+      {
+        "full_name": "Hummer, Gerhard",
+        "short_name": "Hummer G",
+        "identifiers": [
+          "0000-0001-7768-746X"
+        ],
+        "affiliations": [
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Department of Theoretical Biophysics, Max Planck Institute of Biophysics, 60438 Frankfurt am Main, Germany.",
+          "Institute of Biophysics, Goethe University Frankfurt, 60438 Frankfurt am Main, Germany."
+        ]
+      },
+      {
+        "full_name": "Hurley, James H",
+        "short_name": "Hurley JH",
+        "identifiers": [
+          "0000-0001-5054-5445"
+        ],
+        "affiliations": [
+          "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "California Institute for Quantitative Biosciences, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Aligning Science Across Parkinson's (ASAP) Collaborative Research Network, Chevy Chase, MD 20815, USA.",
+          "Graduate Group in Biophysics, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Helen Wills Neuroscience Institute, University of California, Berkeley, Berkeley, CA 94720, USA."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Science advances"
+    ],
+    "journal_abbrev": [
+      "Sci Adv"
+    ],
+    "pub_date": "2026 Sep 4",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/04 17:40",
+    "fetched_at": "2026-09-08 15:20:36"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42696573",
+      "41278708",
+      "30081750",
+      "26299944",
+      "40552710",
+      "32516362",
+      "19287211",
+      "39169022",
+      "31208283",
+      "27046250",
+      "36169801",
+      "40931865",
+      "39207901",
+      "29173006",
+      "29233870",
+      "32773036",
+      "40442316",
+      "33988678",
+      "31352862",
+      "19211835",
+      "19597335",
+      "40543587",
+      "29929428",
+      "24879146",
+      "19258318",
+      "36791199",
+      "26213203",
+      "28561066",
+      "34502089",
+      "34369648",
+      "24013547",
+      "39152217",
+      "21855797",
+      "18936157",
+      "41880641",
+      "25737544",
+      "34505572",
+      "32516310",
+      "22885598",
+      "27934868",
+      "39394942",
+      "29313410",
+      "26687681",
+      "32035621",
+      "30917996",
+      "28301741",
+      "27387056",
+      "34654847",
+      "23670046",
+      "27510922",
+      "39768203",
+      "26030876",
+      "19225151",
+      "22024743",
+      "19690328",
+      "23509291",
+      "39177530",
+      "33328309",
+      "31387948",
+      "27404361",
+      "41968870",
+      "33666137",
+      "28877469",
+      "30335599",
+      "31160490",
+      "31267703",
+      "29628370",
+      "26325630",
+      "28486929",
+      "30767700",
+      "28253968",
+      "34592149",
+      "22932492",
+      "28639909",
+      "24954904",
+      "40715440",
+      "32913252",
+      "37405380",
+      "29484365",
+      "30517873",
+      "26754330",
+      "37394799",
+      "28118060",
+      "29048433",
+      "33149253",
+      "35246531",
+      "21072212",
+      "33109685",
+      "32616830",
+      "31776979",
+      "32543267",
+      "39535169",
+      "29732320",
+      "30907226",
+      "35435132",
+      "29634932",
+      "41557796",
+      "26236954",
+      "21205641",
+      "34424124"
+    ],
+    "review": [
+      "42696573",
+      "29233870",
+      "40543587",
+      "24879146",
+      "41880641",
+      "28301741"
+    ],
+    "pmc": [
+      "13544240"
+    ],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https:///www.science.org/doi/10.1126/sciadv.aeg3201?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub  0pubmed",
+        "provider": "Atypon",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/pmid/42696573/",
+        "provider": "PubMed Central",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

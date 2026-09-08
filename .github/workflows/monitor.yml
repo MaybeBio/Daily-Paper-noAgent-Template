@@ -1,0 +1,38 @@
+name: literature-monitor
+
+on:
+  schedule:
+    - cron: "23 9 * * 1"   # 每周一 09:23 UTC（避免整点拥挤）
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: pip install pyPaperFlow
+      - run: python monitor.py --config config.yaml --out-dir . --issue-body /tmp/issue.md --issue-title /tmp/issue.title
+        env:
+          ENTREZ_EMAIL: ${{ secrets.ENTREZ_EMAIL }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+      - name: commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "monitor: capture $(date +%F)" || echo "no changes"
+          git push
+      - name: open issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s /tmp/issue.md ]; then
+            gh issue create --title "$(cat /tmp/issue.title)" --body-file /tmp/issue.md || true
+          fi

@@ -1,0 +1,227 @@
+{
+  "identity": {
+    "pmid": "42425424",
+    "doi": "10.1016/j.bbapap.2026.141161",
+    "title": "Atomistic mapping of the Sclerostin-LRP6 binding interface using molecular dynamics simulation and essential dynamics."
+  },
+  "content": {
+    "abstract": "This study investigates the molecular mechanism by which Sclerostin (SOST), a secreted cystine-knot protein with a structured core and functionally relevant highly flexible or intrinsically disordered regions (IDRs), inhibits the LRP6 co-receptor, a central component of canonical Wnt beta-catenin signaling that regulates bone homeostasis and represents a key therapeutic target in osteoporosis. Although previous structural and biochemical studies have suggested a multivalent mode of SOST engagement involving the LRP6 E1E2 region, the molecular determinants of high-affinity inhibition remain incompletely defined due to the construction of truncations and unresolved disordered segments. In this Investigation, we applied atomistic molecular dynamics (MD) simulations of the human SOST-LRP6 E1E2 ectodomain complex to examine its stability and residue-level interaction behavior in solution. The simulations indicate that SOST engages LRP6 through two coordinated regions. Specifically, the loop 2 region of SOST, particularly the conserved NAI motif, maintains stable interactions with the E1 domain, while the C-terminal region of SOST, including the previously described HNQS motif as well as additional downstream residues, interacts with the E2 domain. These extended interactions provide a mechanistic explanation for the higher binding affinity observed for full-length SOST compared with truncated variants. In contrast to prior structural studies, this work reveals an anchor-stabilized, chemically diverse interaction network in which persistent loop 2/E1 and C-terminal/E2 contacts maintain receptor engagement while surrounding contacts dynamically remodel, providing deeper insight into bone-related signaling mechanisms.",
+    "keywords": [
+      "Intrinsically disordered regions (IDR)",
+      "LRP6 E1E2 ectodomain",
+      "Molecular dynamics simulation",
+      "Sclerostin (SOST)",
+      "Wnt/beta-catenin"
+    ],
+    "mesh_terms": [
+      "*Low Density Lipoprotein Receptor-Related Protein-6/chemistry/metabolism",
+      "*Molecular Dynamics Simulation",
+      "Humans",
+      "Adaptor Proteins, Signal Transducing/chemistry",
+      "Protein Binding",
+      "Binding Sites",
+      "Genetic Markers",
+      "Intercellular Signaling Peptides and Proteins",
+      "*Glycoproteins/chemistry/metabolism"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Babelian, Mohammad",
+        "Azghandi, Yalda",
+        "Mehrnejad, Faramarz",
+        "Naderi-Manesh, Hossein"
+      ],
+      "short_names": [
+        "Babelian M",
+        "Azghandi Y",
+        "Mehrnejad F",
+        "Naderi-Manesh H"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran.",
+        "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran.",
+        "Department of Nanobiotechnology and Biomimetics, School of Life Sciences Engineering, College of Interdisciplinary Science and Technology, University of Tehran, Tehran 14395-1561, Iran.",
+        "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran. Electronic address: naderman@modares.ac.ir."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Babelian, Mohammad",
+        "short_name": "Babelian M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran."
+        ]
+      },
+      {
+        "full_name": "Azghandi, Yalda",
+        "short_name": "Azghandi Y",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran."
+        ]
+      },
+      {
+        "full_name": "Mehrnejad, Faramarz",
+        "short_name": "Mehrnejad F",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Nanobiotechnology and Biomimetics, School of Life Sciences Engineering, College of Interdisciplinary Science and Technology, University of Tehran, Tehran 14395-1561, Iran."
+        ]
+      },
+      {
+        "full_name": "Naderi-Manesh, Hossein",
+        "short_name": "Naderi-Manesh H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Biophysics, Faculty of Biological Sciences, Tarbiat Modares University, Tehran, Iran. Electronic address: naderman@modares.ac.ir."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Biochimica et biophysica acta. Proteins and proteomics"
+    ],
+    "journal_abbrev": [
+      "Biochim Biophys Acta Proteins Proteom"
+    ],
+    "pub_date": "2026 Sep 1",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/07/10 00:36",
+    "fetched_at": "2026-09-07 13:05:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42425424",
+      "33097721",
+      "17002572",
+      "24312339",
+      "38240094",
+      "33833136",
+      "39182248",
+      "37608541",
+      "39819348",
+      "22696217",
+      "23638027",
+      "33164872",
+      "30035709",
+      "29925589",
+      "21944579",
+      "15778503",
+      "28234935",
+      "21984209",
+      "27723935",
+      "40896957",
+      "20093360",
+      "20446724",
+      "25847683",
+      "23901037",
+      "42134757",
+      "21887268",
+      "22000856",
+      "35563144",
+      "38385987",
+      "27558933",
+      "19936252",
+      "29307778",
+      "40728828",
+      "15908424",
+      "27163932",
+      "23469146",
+      "37811743",
+      "23022962",
+      "30069874",
+      "24265322",
+      "28052259",
+      "25837159",
+      "42475469",
+      "42031715",
+      "11448771",
+      "20816666",
+      "11433302",
+      "23912807",
+      "22372892",
+      "31085352",
+      "35278242",
+      "24225945",
+      "25143377",
+      "35099616",
+      "35785219",
+      "18089564",
+      "22195040",
+      "39012429",
+      "42202788",
+      "19874086",
+      "28694256",
+      "40399324",
+      "25500543",
+      "18077588",
+      "25271055",
+      "22075208",
+      "19898734",
+      "41365991",
+      "20713706",
+      "17326769",
+      "37065631",
+      "36987921",
+      "18362152",
+      "38051321",
+      "24607787",
+      "19940355",
+      "22589387",
+      "24743782",
+      "27524201",
+      "22000855",
+      "28259981",
+      "23362266",
+      "18509060",
+      "17400545",
+      "26232882",
+      "23773994",
+      "24556500",
+      "34615853",
+      "25808845",
+      "19208630",
+      "26224368",
+      "28062506",
+      "31609038",
+      "24412751",
+      "31588233",
+      "37121919",
+      "40413190",
+      "37493468",
+      "22491013",
+      "25271056"
+    ],
+    "review": [
+      "42425424",
+      "35563144"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S1570-9639(26)00038-5",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

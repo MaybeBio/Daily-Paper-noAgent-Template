@@ -1,0 +1,241 @@
+{
+  "identity": {
+    "pmid": "42379439",
+    "doi": "10.1016/j.ijbiomac.2026.153277",
+    "title": "Nickel management by the accessory protein UreG during urease activation."
+  },
+  "content": {
+    "abstract": "Urease is a nickel-dependent metalloenzyme whose activation requires the coordinated action of four accessory proteins that mediate Ni(II) trafficking and insertion into the active site. Among these proteins, UreG is the first reported case of an intrinsically disordered GTPase that transiently binds Ni(II) through a conserved Cys-Pro-His (CPH) motif and is thought to regulate metal delivery during urease maturation. In this study, we investigated how GTP hydrolysis affects Ni(II) binding and the structural dynamics of Klebsiella pneumoniae UreG using extended all-atom molecular dynamics simulations in explicit solvent. Removal of the GTP gamma-phosphate group and Mg(II) ion, thus modeling the effects of GTP hydrolysis, destabilizes the hydrogen-bonding network that connects the nucleotide-binding pocket to the CPH motif. This disruption increases the tendency of the UreG homodimer to undergo structural rearrangement, enhancing its flexibility, as well as displacing the Ni(II)-binding region outward, rendering it more exposed to the aqueous environment. Nevertheless, Ni(II) remains coordinated to the CPH motif throughout all simulations. These results support a model in which GTP hydrolysis primes UreG for Ni(II) transfer by weakening the structural constraints around the metal-binding site, rather than directly triggering metal release. Additional interactions, likely involving the accessory protein UreF, are required to promote nickel release and complete urease activation.",
+    "keywords": [
+      "GTP hydrolysis",
+      "Metallochaperone",
+      "Molecular dynamics",
+      "Nickel trafficking",
+      "UreG",
+      "Urease activation"
+    ],
+    "mesh_terms": [
+      "*Nickel/metabolism/chemistry",
+      "*Urease/metabolism/chemistry",
+      "*Bacterial Proteins/chemistry/metabolism",
+      "Molecular Dynamics Simulation",
+      "Hydrolysis",
+      "Enzyme Activation",
+      "Guanosine Triphosphate/metabolism",
+      "Binding Sites",
+      "Protein Binding",
+      "Hydrogen Bonding",
+      "Phosphate-Binding Proteins"
+    ],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Frumenzio, Giorgia",
+        "Emerson, Andrew",
+        "Ciurli, Stefano",
+        "Musiani, Francesco"
+      ],
+      "short_names": [
+        "Frumenzio G",
+        "Emerson A",
+        "Ciurli S",
+        "Musiani F"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy; Super Computing Applications and Innovation, Department HPC, CINECA, via Magnanelli 6/3, 40033, Casalecchio di Reno, Italy.",
+        "Super Computing Applications and Innovation, Department HPC, CINECA, via Magnanelli 6/3, 40033, Casalecchio di Reno, Italy.",
+        "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy.",
+        "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy. Electronic address: francesco.musiani@unibo.it."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Frumenzio, Giorgia",
+        "short_name": "Frumenzio G",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy; Super Computing Applications and Innovation, Department HPC, CINECA, via Magnanelli 6/3, 40033, Casalecchio di Reno, Italy."
+        ]
+      },
+      {
+        "full_name": "Emerson, Andrew",
+        "short_name": "Emerson A",
+        "identifiers": [],
+        "affiliations": [
+          "Super Computing Applications and Innovation, Department HPC, CINECA, via Magnanelli 6/3, 40033, Casalecchio di Reno, Italy."
+        ]
+      },
+      {
+        "full_name": "Ciurli, Stefano",
+        "short_name": "Ciurli S",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy."
+        ]
+      },
+      {
+        "full_name": "Musiani, Francesco",
+        "short_name": "Musiani F",
+        "identifiers": [],
+        "affiliations": [
+          "Laboratory of Bioinorganic Chemistry, Department of Pharmacy and Biotechnology, University of Bologna, Viale Piero Gobetti 87, 40129, Bologna, Italy. Electronic address: francesco.musiani@unibo.it."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "International journal of biological macromolecules"
+    ],
+    "journal_abbrev": [
+      "Int J Biol Macromol"
+    ],
+    "pub_date": "2026 Sep",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/07/01 00:34",
+    "fetched_at": "2026-09-07 13:05:09"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42379439",
+      "29203664",
+      "25752610",
+      "24115911",
+      "25846143",
+      "18767150",
+      "20533838",
+      "25200810",
+      "28710280",
+      "10500143",
+      "21542631",
+      "26401965",
+      "32708696",
+      "22369361",
+      "24982029",
+      "24292245",
+      "35556134",
+      "9209019",
+      "24338018",
+      "14521881",
+      "11015224",
+      "28379694",
+      "10194322",
+      "24126709",
+      "23797863",
+      "32755703",
+      "19476442",
+      "22698670",
+      "22013070",
+      "15542602",
+      "28004186",
+      "34325209",
+      "23653445",
+      "23661161",
+      "37083535",
+      "12072968",
+      "21239585",
+      "30264175",
+      "23539618",
+      "7855593",
+      "17510959",
+      "10753863",
+      "36638839",
+      "8611523",
+      "1624427",
+      "22271305",
+      "7721685",
+      "11591723",
+      "30858174",
+      "8808929",
+      "10652150",
+      "42217269",
+      "35102896",
+      "7909161",
+      "10555581",
+      "12533448",
+      "21939280",
+      "8808930",
+      "16700560",
+      "11602602",
+      "16199586",
+      "32828469",
+      "20662514",
+      "20046957",
+      "34360977",
+      "25608738",
+      "17309280",
+      "2211515",
+      "11157956",
+      "20635345",
+      "8029691",
+      "20890717",
+      "30806050",
+      "17975083",
+      "7961442",
+      "28177601",
+      "12896998",
+      "17041056",
+      "23560717",
+      "26580226",
+      "11289508",
+      "11507093",
+      "14769802",
+      "21619065",
+      "20207756",
+      "29708738",
+      "37766968",
+      "22962938",
+      "33711632",
+      "27580605",
+      "22068961",
+      "42378332",
+      "10196122",
+      "28809946",
+      "40698646",
+      "17205208",
+      "34545874",
+      "39611830",
+      "14749331",
+      "30969470"
+    ],
+    "review": [
+      "42379439",
+      "35556134",
+      "23539618",
+      "32828469",
+      "20046957",
+      "30806050"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S0141-8130(26)03217-4",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://antibodies.cancer.gov/detail/CPTC-CPE-1",
+        "provider": "NCI CPTC Antibody Characterization Program",
+        "category": "Research Materials",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

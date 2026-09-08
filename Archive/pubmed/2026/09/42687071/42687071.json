@@ -1,0 +1,262 @@
+{
+  "identity": {
+    "pmid": "42687071",
+    "doi": "10.1007/s11095-026-04186-1",
+    "title": "Transnasal Administration of Surfactant Aerosol to the Lungs of Infants Using Direct Interfaces - Lessons Learned from Computational Fluid Dynamics."
+  },
+  "content": {
+    "abstract": "PURPOSE: Direct-to-infant (D2I) transnasal aerosol surfactant therapy (AST) offers a promising non-invasive alternative for treating neonatal respiratory distress syndrome (RDS). However, achieving high lung delivery efficiency with dry powder inhalers (DPIs) requires careful optimization of complex fluid-particle interactions. This study used computational fluid dynamics (CFD) to optimize an Infant Air‑Jet Dry Powder Aerosol Delivery System (iDP‑ADS) and derive transferable design principles. METHODS: A CFD model of the iDP‑ADS coupled to a 31‑week preterm nose‑throat geometry was validated against in vitro measurements. Sensitivity analyses evaluated modeling assumptions (steady‑state vs. transient, monodisperse vs. polydisperse) and critical design parameters influencing aerosol delivery, such as upstream air volume, interface geometry, temporal aerosol emission profiles, and actuation flow rates. RESULTS: The CFD model demonstrated strong in vitro agreement (2.8% mean absolute difference). Regarding modeling: standard simplifications, particularly steady-state approximations, overpredicted lung transmission (~24%), establishing the necessity of high-fidelity transient simulations with polydisperse aerosols. Regarding aerosol delivery: integrating an upstream air volume created \"hydrodynamic shielding,\" reducing relative interface losses by up to 50%. A 10 mm diffusive path length and 20 degrees  (inward and downward) prong alignment balanced jet dissipation while minimizing nasal deposition. Front-loading of aerosol emission prevented entrapment of 10-14% of the dose in anatomical dead space. An optimal system-specific actuation flow rate of 3 L/min achieved ~53.5% aerosol lung transmission, balancing aerosolization efficiency against turbulence-driven transport losses. CONCLUSIONS: High-efficiency transnasal AST requires balancing often competing aerosol generation physics, transport behavior, and clinical constraints. This study highlights CFD as a vital design tool, providing key lessons to inform future modeling and practical interface development.",
+    "keywords": [
+      "CFD",
+      "aerosol surfactant therapy",
+      "air-jet DPI",
+      "nose-to-lung aerosol delivery",
+      "particle deposition",
+      "preterm infant",
+      "respiratory drug delivery"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Jubaer, Hasan",
+        "Farkas, Dale",
+        "Dalton, Caleb",
+        "Momin, Mohammad A M",
+        "Hindle, Michael",
+        "Longest, Worth"
+      ],
+      "short_names": [
+        "Jubaer H",
+        "Farkas D",
+        "Dalton C",
+        "Momin MAM",
+        "Hindle M",
+        "Longest W"
+      ],
+      "auids": [
+        "ORCID: 0000-0003-4939-5691"
+      ],
+      "affiliations": [
+        "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA.",
+        "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA.",
+        "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA.",
+        "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA.",
+        "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA.",
+        "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA. pwlongest@vcu.edu.",
+        "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA. pwlongest@vcu.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Jubaer, Hasan",
+        "short_name": "Jubaer H",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA."
+        ]
+      },
+      {
+        "full_name": "Farkas, Dale",
+        "short_name": "Farkas D",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA."
+        ]
+      },
+      {
+        "full_name": "Dalton, Caleb",
+        "short_name": "Dalton C",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Momin, Mohammad A M",
+        "short_name": "Momin MAM",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Hindle, Michael",
+        "short_name": "Hindle M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA."
+        ]
+      },
+      {
+        "full_name": "Longest, Worth",
+        "short_name": "Longest W",
+        "identifiers": [
+          "0000-0003-4939-5691"
+        ],
+        "affiliations": [
+          "Department of Mechanical and Nuclear Engineering, Virginia Commonwealth University, 401 West Main Street, P.O. Box 843015, Richmond, VA, 23284-3015, USA. pwlongest@vcu.edu.",
+          "Department of Pharmaceutics, Virginia Commonwealth University, Richmond, VA, USA. pwlongest@vcu.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Pharmaceutical research"
+    ],
+    "journal_abbrev": [
+      "Pharm Res"
+    ],
+    "pub_date": "2026 Sep 3",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/03 05:37",
+    "fetched_at": "2026-09-08 15:20:36"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42687071",
+      "39830599",
+      "35166601",
+      "30556777",
+      "35441324",
+      "32758026",
+      "38164243",
+      "41807796",
+      "39821052",
+      "36253630",
+      "34462876",
+      "39112775",
+      "39930310",
+      "32968848",
+      "32451773",
+      "31676991",
+      "40272931",
+      "24299500",
+      "31464559",
+      "38309959",
+      "25192072",
+      "42026389",
+      "37406945",
+      "40813932",
+      "37896128",
+      "36938947",
+      "32663586",
+      "30734133",
+      "32862295",
+      "28075194",
+      "29054499",
+      "34129919",
+      "35147870",
+      "30132207",
+      "25944585",
+      "33716317",
+      "31139939",
+      "42082857",
+      "27836120",
+      "30855199",
+      "23025452",
+      "27082824",
+      "23289401",
+      "39237797",
+      "29261454",
+      "35761163",
+      "40392626",
+      "32440940",
+      "23808762",
+      "16774865",
+      "33637075",
+      "25145039",
+      "25308992",
+      "39798623",
+      "31131369",
+      "24987981",
+      "27401410",
+      "21410327",
+      "23821760",
+      "24307605",
+      "19466904",
+      "35379243",
+      "31468741",
+      "38171111",
+      "33161040",
+      "42067539",
+      "41472839",
+      "16533511",
+      "31313534",
+      "30553814",
+      "39104360",
+      "32971228",
+      "38981652",
+      "39339157",
+      "23820131",
+      "34887754",
+      "29941306",
+      "24508552",
+      "29297393",
+      "30463458",
+      "38081562",
+      "22723022",
+      "18956950",
+      "19082892",
+      "24929253",
+      "35783301",
+      "27337643",
+      "41187831",
+      "30458054",
+      "21410324",
+      "29733972",
+      "34808267",
+      "36283644",
+      "30932345",
+      "35643378",
+      "25265389",
+      "42595177",
+      "23421901",
+      "35976418",
+      "22290350"
+    ],
+    "review": [
+      "42687071",
+      "40813932",
+      "42082857",
+      "23289401",
+      "33637075",
+      "30553814",
+      "39104360",
+      "32971228",
+      "30463458",
+      "35783301"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://doi.org/10.1007/s11095-026-04186-1",
+        "provider": "Springer",
+        "category": "Full Text Sources",
+        "attribute": "subscription/membership/fee required",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/non-CPTAC-3697",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "source": "biorxiv",
+  "source_id": "10.64898/2026.08.31.748056",
+  "title": "Comprehensive Evaluation of Protein Language Model Embeddings for Drug-Target Affinity Prediction",
+  "doi": "10.64898/2026.08.31.748056",
+  "abstract": "Accurate identification of drug-target interactions is consequential for novel drug discovery and development. Deep learning methods for drug-target affinity (DTA) prediction have shown great promise in accelerating drug discovery and reducing development costs. Although graph neural networks have improved drug representation learning for DTA prediction tasks, many models still struggle to effectively and efficiently capture protein information, limiting overall prediction accuracy. In this work, we systematically evaluate the impact of pre-trained protein language models (PLMs) on the downstream task of predicting binding affinity between drugs and target proteins. We design multiple experiments across four different molecular representation backbones and assess the effect of incorporating PLM embeddings, comparing their performance to classical 1D convolution methods. We evaluate four families of PLMs which we integrate into PLM-GraphDTA, each built on distinct architectures and optimized for different tasks, including structure prediction, function prediction, and sequence unmasking. Additionally, we evaluate DeepGraphDTA, an architectural modification of the baseline convolution method designed to improve protein representation learning. The models are evaluated on two benchmark datasets, Davis and KIBA, using concordance index (CI) and mean squared error (MSE) as performance metrics. We further evaluate the generalization power of each model using cold-start train and test splits, and analyze the per-protein contribution to total CI. The results indicate simple architectural modifications to traditional convolution methods may be sufficient to bridge the gap to large pre-trained PLMs.",
+  "authors": [
+    "Matija Marijan",
+    "Ivan Tanasijevic"
+  ],
+  "published_date": "2026-09-03",
+  "updated_date": "2026-09-04T04:45:25Z",
+  "journal": "bioRxiv",
+  "category": "Bioinformatics",
+  "landing_url": "https://www.biorxiv.org/content/10.64898/2026.08.31.748056",
+  "pdf_url": "https://www.biorxiv.org/content/10.64898/2026.08.31.748056.full.pdf",
+  "pdf_path": "",
+  "pdf_downloaded": false,
+  "query": "(\"intrinsically disordered protein\" OR \"intrinsically disordered region\" OR \"intrinsically disordered\" OR \"disordered protein\" OR \"natively unfolded\" OR \"unstructured protein\" OR \"biomolecular condensate\") AND (\"protein-protein interaction\" OR interaction OR interact OR bind OR complex OR partner OR interface) AND (\"deep learning\" OR \"machine learning\" OR \"neural network\" OR \"graph neural network\" OR \"language model\" OR transformer OR \"diffusion model\" OR generative OR \"flow matching\" OR \"molecular dynamics\" OR simulation OR docking OR \"binding affinity\" OR prediction OR alphafold OR esmfold OR rosetta)",
+  "version": "",
+  "keywords": [
+    "Bioinformatics"
+  ],
+  "extra": {
+    "publisher": "openRxiv",
+    "prefix": "10.64898",
+    "type": "posted-content",
+    "group_title": "Bioinformatics",
+    "raw_record": {
+      "institution": [
+        {
+          "name": "bioRxiv"
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            4
+          ]
+        ],
+        "date-time": "2026-09-04T05:18:17Z",
+        "timestamp": 1788499097008,
+        "version": "build-2803163510"
+      },
+      "posted": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "group-title": "Bioinformatics",
+      "reference-count": 0,
+      "publisher": "openRxiv",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                9,
+                3
+              ]
+            ],
+            "date-time": "2026-09-03T00:00:00Z",
+            "timestamp": 1788393600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "accepted": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            2
+          ]
+        ]
+      },
+      "abstract": "<jats:p>Accurate identification of drug-target interactions is consequential for novel drug discovery and development. Deep learning methods for drug-target affinity (DTA) prediction have shown great promise in accelerating drug discovery and reducing development costs. Although graph neural networks have improved drug representation learning for DTA prediction tasks, many models still struggle to effectively and efficiently capture protein information, limiting overall prediction accuracy.\nIn this work, we systematically evaluate the impact of pre-trained protein language models (PLMs) on the downstream task of predicting binding affinity between drugs and target proteins. We design multiple experiments across four different molecular representation backbones and assess the effect of incorporating PLM embeddings, comparing their performance to classical 1D convolution methods.\nWe evaluate four families of PLMs which we integrate into PLM-GraphDTA, each built on distinct architectures and optimized for different tasks, including structure prediction, function prediction, and sequence unmasking. Additionally, we evaluate DeepGraphDTA, an architectural modification of the baseline convolution method designed to improve protein representation learning. The models are evaluated on two benchmark datasets, Davis and KIBA, using concordance index (CI) and mean squared error (MSE) as performance metrics. We further evaluate the generalization power of each model using cold-start train and test splits, and analyze the per-protein contribution to total CI.\nThe results indicate simple architectural modifications to traditional convolution methods may be sufficient to bridge the gap to large pre-trained PLMs.</jats:p>",
+      "DOI": "10.64898/2026.08.31.748056",
+      "type": "posted-content",
+      "created": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            4
+          ]
+        ],
+        "date-time": "2026-09-04T04:45:25Z",
+        "timestamp": 1788497125000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Comprehensive Evaluation of Protein Language Model Embeddings for Drug-Target Affinity Prediction"
+      ],
+      "prefix": "10.64898",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0001-7483-2016",
+          "authenticated-orcid": false,
+          "given": "Matija",
+          "family": "Marijan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Belgrade - School of Electrical Engineering;"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ivan",
+          "family": "Tanasijevic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The Institute for Artificial Intelligence Research and Development of Serbia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "54368",
+      "link": [
+        {
+          "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.08.31.748056",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            4
+          ]
+        ],
+        "date-time": "2026-09-04T04:45:25Z",
+        "timestamp": 1788497125000
+      },
+      "score": 62.07762,
+      "resource": {
+        "primary": {
+          "URL": "http://biorxiv.org/lookup/doi/10.64898/2026.08.31.748056"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.64898/2026.08.31.748056",
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            3
+          ]
+        ]
+      },
+      "subtype": "preprint"
+    }
+  }
+}

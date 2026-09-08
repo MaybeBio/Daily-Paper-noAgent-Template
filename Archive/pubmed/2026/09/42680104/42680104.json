@@ -1,0 +1,312 @@
+{
+  "identity": {
+    "pmid": "42680104",
+    "doi": "10.1016/j.mcpro.2026.101651",
+    "title": "Multicomplex Integrative Structural Modeling of a Human Histone Deacetylase Interactome."
+  },
+  "content": {
+    "abstract": "Histone Deacetylase (HDAC) 1 and 2 are key enzymatic components in multiple large chromatin remodeling complexes including NuRD, SIN3, and CoREST. In addition, both HDAC 1 and 2 contain a large intrinsically disordered region (IDR) within their C-terminal domain (CTD). How HDAC1/2 assemble into these complexes and the structure of the CTD IDR remains poorly understood. Here, we used HDAC1/2 to isolate their protein interaction networks from cells and used crosslinking mass spectrometry (XL-MS) coupled with the Integrative Modeling Platform to build structural models of the NuRD, SIN3A, and CoREST complexes. Next, we implemented an AlphaFold-enabled XL-MS constrained modeling approach to investigate how HDAC1 could assemble into these complexes. We show that the CTD IDR of HDAC1 folds into alpha helices in these complexes. Finally, we built a complete integrative structural model of a NuRD subcomplex including the abundant HDAC1:MBD3:MTA1:GATAD2B:RBBP4 subunits, which included 6 IDRs. The approaches used herein are broadly applicable for the study of protein complexes and protein interaction networks that can provide important insights into IDRs.",
+    "keywords": [
+      "CoREST",
+      "Crosslinking Mass Spectrometry",
+      "Endogenous Complex Structures",
+      "HDAC1",
+      "HDAC2",
+      "Integrative Structural Modeling",
+      "Intrinsically Disordered Regions",
+      "NuRD",
+      "SIN3A"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Nde, Jules",
+        "Majila, Kartik",
+        "Zimmermann, Rosalyn C",
+        "Kempf, Cassandra",
+        "Zhang, Ying",
+        "Cesare, Joseph",
+        "Thornton, Janet L",
+        "Workman, Jerry L",
+        "Florens, Laurence",
+        "Viswanath, Shruthi",
+        "Washburn, Michael P"
+      ],
+      "short_names": [
+        "Nde J",
+        "Majila K",
+        "Zimmermann RC",
+        "Kempf C",
+        "Zhang Y",
+        "Cesare J",
+        "Thornton JL",
+        "Workman JL",
+        "Florens L",
+        "Viswanath S",
+        "Washburn MP"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA.",
+        "National Centre for Biological Sciences, Tata Institute of Fundamental Research, Bangalore, India.",
+        "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA.",
+        "Stowers Institute for Medical Research, Kansas City, Missouri, USA; The Center of Mass Spectrometry and Metabolic Tracing, Department of Chemistry, Washington University St. Louis, St. Louis, MO.",
+        "Stowers Institute for Medical Research, Kansas City, Missouri, USA.",
+        "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA; Stowers Institute for Medical Research, Kansas City, Missouri, USA.",
+        "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA.",
+        "Stowers Institute for Medical Research, Kansas City, Missouri, USA.",
+        "Stowers Institute for Medical Research, Kansas City, Missouri, USA.",
+        "National Centre for Biological Sciences, Tata Institute of Fundamental Research, Bangalore, India. Electronic address: shruthiv@ncbs.res.in.",
+        "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA. Electronic address: mwashburn4@kumc.edu."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Nde, Jules",
+        "short_name": "Nde J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA."
+        ]
+      },
+      {
+        "full_name": "Majila, Kartik",
+        "short_name": "Majila K",
+        "identifiers": [],
+        "affiliations": [
+          "National Centre for Biological Sciences, Tata Institute of Fundamental Research, Bangalore, India."
+        ]
+      },
+      {
+        "full_name": "Zimmermann, Rosalyn C",
+        "short_name": "Zimmermann RC",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA."
+        ]
+      },
+      {
+        "full_name": "Kempf, Cassandra",
+        "short_name": "Kempf C",
+        "identifiers": [],
+        "affiliations": [
+          "Stowers Institute for Medical Research, Kansas City, Missouri, USA; The Center of Mass Spectrometry and Metabolic Tracing, Department of Chemistry, Washington University St. Louis, St. Louis, MO."
+        ]
+      },
+      {
+        "full_name": "Zhang, Ying",
+        "short_name": "Zhang Y",
+        "identifiers": [],
+        "affiliations": [
+          "Stowers Institute for Medical Research, Kansas City, Missouri, USA."
+        ]
+      },
+      {
+        "full_name": "Cesare, Joseph",
+        "short_name": "Cesare J",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA; Stowers Institute for Medical Research, Kansas City, Missouri, USA."
+        ]
+      },
+      {
+        "full_name": "Thornton, Janet L",
+        "short_name": "Thornton JL",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA."
+        ]
+      },
+      {
+        "full_name": "Workman, Jerry L",
+        "short_name": "Workman JL",
+        "identifiers": [],
+        "affiliations": [
+          "Stowers Institute for Medical Research, Kansas City, Missouri, USA."
+        ]
+      },
+      {
+        "full_name": "Florens, Laurence",
+        "short_name": "Florens L",
+        "identifiers": [],
+        "affiliations": [
+          "Stowers Institute for Medical Research, Kansas City, Missouri, USA."
+        ]
+      },
+      {
+        "full_name": "Viswanath, Shruthi",
+        "short_name": "Viswanath S",
+        "identifiers": [],
+        "affiliations": [
+          "National Centre for Biological Sciences, Tata Institute of Fundamental Research, Bangalore, India. Electronic address: shruthiv@ncbs.res.in."
+        ]
+      },
+      {
+        "full_name": "Washburn, Michael P",
+        "short_name": "Washburn MP",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Cancer Biology, University of Kansas Medical Center, Kansas City, KS, USA. Electronic address: mwashburn4@kumc.edu."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Molecular & cellular proteomics : MCP"
+    ],
+    "journal_abbrev": [
+      "Mol Cell Proteomics"
+    ],
+    "pub_date": "2026 Sep 1",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/01 23:34",
+    "fetched_at": "2026-09-08 15:20:36"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42680104",
+      "41890122",
+      "41928988",
+      "36040254",
+      "32294434",
+      "40966515",
+      "25123934",
+      "23612983",
+      "27098840",
+      "30209338",
+      "37552759",
+      "11171972",
+      "40733539",
+      "20585571",
+      "27144666",
+      "11784859",
+      "10444591",
+      "20404188",
+      "12920132",
+      "32501215",
+      "33130996",
+      "23286669",
+      "11102443",
+      "29599190",
+      "33187090",
+      "25601084",
+      "25796366",
+      "35051665",
+      "31358618",
+      "19686092",
+      "25482055",
+      "23697933",
+      "33264408",
+      "15701600",
+      "27235397",
+      "31519689",
+      "37488358",
+      "25753662",
+      "23014989",
+      "35747969",
+      "23287868",
+      "33283408",
+      "38971208",
+      "29063705",
+      "27117189",
+      "18454139",
+      "14722073",
+      "26124119",
+      "18059533",
+      "19198625",
+      "25352341",
+      "28179136",
+      "32101746",
+      "24920672",
+      "30045876",
+      "27914010",
+      "34231305",
+      "12354758",
+      "14643676",
+      "29655301",
+      "39072126",
+      "19561124",
+      "34895473",
+      "17827154",
+      "40987384",
+      "27378074",
+      "12082111",
+      "35915078",
+      "21454521",
+      "29263092",
+      "10840944",
+      "42363279",
+      "26714524",
+      "39435885",
+      "25998554",
+      "33426312",
+      "40712028",
+      "38496433",
+      "12724404",
+      "24763403",
+      "23658227",
+      "25825869",
+      "35994477",
+      "18372343",
+      "23791785",
+      "33264611",
+      "9520398",
+      "12697811",
+      "27940549",
+      "32467258",
+      "15456747",
+      "16428440",
+      "28392145",
+      "34389466",
+      "15897453",
+      "33731112",
+      "36116541",
+      "11602581",
+      "41387687",
+      "11564889"
+    ],
+    "review": [
+      "42680104",
+      "25123934",
+      "33187090",
+      "25796366",
+      "25482055",
+      "23697933",
+      "35747969",
+      "38971208",
+      "25352341"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S1535-9476(26)00147-7",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      },
+      {
+        "url": "https://assays.cancer.gov/CPTAC-1248",
+        "provider": "NCI CPTAC Assay Portal",
+        "category": "Miscellaneous",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}

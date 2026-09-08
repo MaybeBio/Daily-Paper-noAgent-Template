@@ -1,0 +1,238 @@
+{
+  "identity": {
+    "pmid": "42679927",
+    "doi": "10.1016/j.cstres.2026.100210",
+    "title": "The Epichaperome Matrix Theory: A Systems-Level Model of Active Molecular Organization."
+  },
+  "content": {
+    "abstract": "BACKGROUND: Epichaperomes are stable, stress-induced supramolecular assemblies formed through extensive integration of molecular chaperones, co-chaperones, signaling proteins, and client proteins. Although increasing evidence indicates that epichaperomes act as organizational hubs that coordinate proteostasis and signaling networks in cancer, neurodegenerative disorders, and chronic inflammatory diseases, their potential physical roles in cellular organization remain largely unexplored. RESULTS: Here, the Epichaperome Matrix Theory, a systems-level theoretical framework that conceptualizes the epichaperome as a dynamic, nonequilibrium biomolecular matrix possessing emergent transport-regulatory properties is proposed. In this model, epichaperome assemblies generate heterogeneous electrostatic landscapes through the collective distribution of charged amino acid residues, phosphorylation-dependent charge accumulation, ATP-driven conformational dynamics, and high-order network connectivity. By integrating principles from Poisson-Boltzmann electrostatics, Nernst-Planck transport theory, active matter physics, percolation theory, graph theory, biomolecular condensate thermodynamics, and porous hydrogel transport models, a mathematical description in which epichaperomes function as adaptive organizational scaffolds capable of influencing molecular flux, signaling efficiency, and spatial coordination within cells is developed. This framework is further extended through the Transcellular Epichaperome Continuum Hypothesis, proposing that intracellular epichaperomes may be functionally coupled to plasma membrane-associated and extracellular epichaperome assemblies, forming a multiscale organizational network spanning individual cells, tissues, and organ systems. In this extended model, membrane-bound epichaperomes act as coupling interfaces between intracellular and extracellular compartments, while secreted chaperones, extracellular vesicles, and extracellular protein assemblies contribute to intercellular connectivity. Mathematical analysis predicts the emergence of percolating transport networks, electrostatic coupling domains, synchronized conformational dynamics, and stress-responsive communication pathways when epichaperome connectivity exceeds critical thresholds. CONCLUSIONS: The proposed framework suggests that epichaperomes may represent more than stress-associated protein interaction networks and could function as dynamic organizational matrices integrating molecular organization, signaling, and adaptive responses across multiple biological scales. Although the theory remains speculative and currently lacks direct experimental validation, it generates testable predictions regarding membrane-associated epichaperomes, extracellular epichaperome assemblies, electrostatic organization, and intercellular transport behaviors. By providing a unified theoretical foundation linking stress biology, chaperone networks, systems biology, and biophysics, this work expands the conceptual landscape of epichaperome research and identifies new directions for investigating the role of higher-order chaperome organization in health and disease.",
+    "keywords": [
+      "active matter",
+      "biomolecular condensates",
+      "electrostatic organization",
+      "epichaperome",
+      "extracellular chaperones",
+      "heat shock proteins",
+      "molecular chaperones",
+      "molecular transport",
+      "percolation theory",
+      "stress adaptation",
+      "systems biology",
+      "transcellular communication"
+    ],
+    "mesh_terms": [],
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "contributors": {
+    "medline": {
+      "full_names": [
+        "Shevtsov, Maxim"
+      ],
+      "short_names": [
+        "Shevtsov M"
+      ],
+      "auids": [],
+      "affiliations": [
+        "Department of Radiation Oncology, Klinikum rechts der Isar, Technical University of Munich, Ismaninger Str. 22, 81675 Munich, Germany. Electronic address: maxim.shevtsov@tum.de."
+      ]
+    },
+    "xml": [
+      {
+        "full_name": "Shevtsov, Maxim",
+        "short_name": "Shevtsov M",
+        "identifiers": [],
+        "affiliations": [
+          "Department of Radiation Oncology, Klinikum rechts der Isar, Technical University of Munich, Ismaninger Str. 22, 81675 Munich, Germany. Electronic address: maxim.shevtsov@tum.de."
+        ]
+      }
+    ]
+  },
+  "source": {
+    "journal_title": [
+      "Cell stress & chaperones"
+    ],
+    "journal_abbrev": [
+      "Cell Stress Chaperones"
+    ],
+    "pub_date": "2026 Sep 1",
+    "pub_year": "2026",
+    "pub_types": [
+      "Journal Article"
+    ]
+  },
+  "metadata": {
+    "entrez_date": "2026/09/01 23:34",
+    "fetched_at": "2026-09-08 15:20:36"
+  },
+  "links": {
+    "cites": [],
+    "refs": [],
+    "similar": [
+      "42679927",
+      "42475469",
+      "23912807",
+      "39414766",
+      "38645031",
+      "40877054",
+      "37892973",
+      "40144950",
+      "42278234",
+      "41148798",
+      "37540435",
+      "39989971",
+      "27706135",
+      "30409908",
+      "42314908",
+      "32297213",
+      "38927459",
+      "11838236",
+      "39936995",
+      "41915304",
+      "23172978",
+      "41628755",
+      "42065721",
+      "22624053",
+      "42196497",
+      "35202628",
+      "36508524",
+      "21951575",
+      "32610141",
+      "42573943",
+      "40214463",
+      "40196628",
+      "18379988",
+      "42433022",
+      "41783689",
+      "34792702",
+      "34822073",
+      "41949208",
+      "40985078",
+      "26571290",
+      "34657288",
+      "41851975",
+      "36414432",
+      "37470705",
+      "42284136",
+      "42490974",
+      "42345792",
+      "22328970",
+      "42646247",
+      "29293508",
+      "42653338",
+      "17127265",
+      "35496791",
+      "31949159",
+      "29442498",
+      "18575265",
+      "41457474",
+      "25030693",
+      "42395913",
+      "20169418",
+      "41134158",
+      "39150724",
+      "24922508",
+      "16849185",
+      "42654107",
+      "42439704",
+      "34344873",
+      "36581212",
+      "32519853",
+      "42253101",
+      "22037044",
+      "42064063",
+      "42129940",
+      "41886557",
+      "32475406",
+      "40976416",
+      "28095400",
+      "41492010",
+      "42519207",
+      "40196562",
+      "42276972",
+      "21599038",
+      "29095844",
+      "42193418",
+      "42074196",
+      "27058315",
+      "42100775",
+      "27491084",
+      "36382184",
+      "42352956",
+      "10960671",
+      "41659251",
+      "42109464",
+      "30466987",
+      "41869662",
+      "37353488",
+      "35885016",
+      "41670285",
+      "37524848",
+      "21204515"
+    ],
+    "review": [
+      "42679927",
+      "40877054",
+      "40144950",
+      "42278234",
+      "41148798",
+      "30409908",
+      "42314908",
+      "32297213",
+      "11838236",
+      "39936995",
+      "41915304",
+      "42065721",
+      "42196497",
+      "21951575",
+      "42573943",
+      "40214463",
+      "18379988",
+      "42433022",
+      "41783689",
+      "34822073",
+      "34657288",
+      "36414432",
+      "42284136",
+      "42345792",
+      "42646247",
+      "42653338",
+      "17127265",
+      "29442498",
+      "25030693",
+      "42395913",
+      "41134158",
+      "39150724",
+      "16849185",
+      "42654107",
+      "42439704",
+      "36581212",
+      "42064063",
+      "41886557",
+      "40976416",
+      "42519207",
+      "42193418",
+      "42074196",
+      "27058315",
+      "27491084",
+      "36382184",
+      "42352956",
+      "10960671",
+      "35885016",
+      "37524848"
+    ],
+    "pmc": [],
+    "entrez": {},
+    "external": [
+      {
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S1355-8145(26)00068-4",
+        "provider": "Elsevier Science",
+        "category": "Full Text Sources",
+        "attribute": "free resource",
+        "linkname": ""
+      }
+    ],
+    "text_mined": []
+  }
+}
