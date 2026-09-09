@@ -1,4 +1,8 @@
-# idp-interaction-ai — 无序蛋白互作 × AI
+# 你所感兴趣的领域的生物医学文献每日推送
+
+> ⚠️ 本仓库是1个模板仓库，供你快速搭建自己的每日文献推送系统。请在 `config.yaml` 中修改课题短名、检索式、时间窗口等配置，并在 GitHub Actions 中设置 PubMed 邮箱与 API key。
+
+本模板使用自研的文献检索与推送工具 [pyPaperFlow](https://github.com/MaybeBio/pyPaperFlow)，数据库覆盖了pubmed、arXiv、bioRxiv、medRxiv、chemRxiv，支持多种检索式与时间窗口，按周抓取最新文献元数据，生成 CSV 与 `_ids.txt`，并创建 GitHub Issue 汇总。
 
 无序蛋白/无序区（IDP/IDR）介导的蛋白质互作，含相分离与凝聚体；方法限定为深度学习、分子动力学与对接。
 
