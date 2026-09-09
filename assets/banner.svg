@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BioLit Monitor —— 生物医学 × 计算 文献自动推送模板">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#0b1120"/>
+      <stop offset="55%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0b1120" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#glow)"/>
+
+  <!-- 右上：节点网络（AI / 关系） -->
+  <g stroke="#64748b" stroke-opacity="0.45" stroke-width="1.2">
+    <line x1="990" y1="78"  x2="1070" y2="116"/>
+    <line x1="1070" y1="116" x2="1150" y2="64"/>
+    <line x1="1150" y1="64"  x2="1206" y2="128"/>
+    <line x1="1070" y1="116" x2="1062" y2="196"/>
+    <line x1="1062" y1="196" x2="1146" y2="236"/>
+    <line x1="1150" y1="64"  x2="1208" y2="150"/>
+  </g>
+  <g>
+    <circle cx="990"  cy="78"  r="3.5"  fill="#22d3ee" opacity="0.95"/>
+    <circle cx="1070" cy="116" r="4.5"  fill="#818cf8" opacity="0.95"/>
+    <circle cx="1150" cy="64"  r="3.5"  fill="#22d3ee" opacity="0.8"/>
+    <circle cx="1206" cy="128" r="8"    fill="#22d3ee" fill-opacity="0.10" stroke="#22d3ee" stroke-opacity="0.5"/>
+    <circle cx="1062" cy="196" r="3"    fill="#a78bfa" opacity="0.9"/>
+    <circle cx="1146" cy="236" r="4"    fill="#a78bfa" opacity="0.8"/>
+  </g>
+
+  <!-- 左下：纸张 / 数据点（文献） -->
+  <g stroke="#334155" stroke-opacity="0.6" stroke-width="1.2">
+    <line x1="80" y1="252" x2="150" y2="212"/>
+    <line x1="150" y1="212" x2="224" y2="254"/>
+    <line x1="150" y1="212" x2="130" y2="132"/>
+    <line x1="224" y1="254" x2="286" y2="196"/>
+    <line x1="130" y1="132" x2="70"  y2="96"/>
+    <line x1="224" y1="254" x2="284" y2="300"/>
+  </g>
+  <g>
+    <circle cx="80"  cy="252" r="3.5" fill="#22d3ee" opacity="0.9"/>
+    <circle cx="150" cy="212" r="4.5" fill="#818cf8" opacity="0.95"/>
+    <circle cx="224" cy="254" r="3"   fill="#22d3ee" opacity="0.8"/>
+    <circle cx="130" cy="132" r="3.5" fill="#a78bfa" opacity="0.85"/>
+    <circle cx="286" cy="196" r="4"   fill="#a78bfa" opacity="0.8"/>
+    <circle cx="70"  cy="96"  r="7"   fill="#22d3ee" fill-opacity="0.10" stroke="#22d3ee" stroke-opacity="0.45"/>
+    <circle cx="284" cy="300" r="3"   fill="#38bdf8" opacity="0.9"/>
+  </g>
+
+  <!-- 中央：文字 -->
+  <g text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+    <text x="640" y="118" font-size="19" letter-spacing="6" fill="#7dd3fc" opacity="0.95">BIO-MED &#215; COMPUTING LITERATURE MONITOR</text>
+    <rect x="520" y="142" width="240" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="640" y="228" font-size="82" font-weight="700" fill="#ffffff" letter-spacing="1">BioLit Monitor</text>
+    <text x="640" y="284" font-size="28" fill="#a5b4fc">每周自动追踪你研究领域的生物医学文献 · pyPaperFlow 驱动</text>
+  </g>
+</svg>
