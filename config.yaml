@@ -1,9 +1,13 @@
 # 课题短名，用于产出文件名与 Issue 标题
-# 无序蛋白/相分离 ∪ × （蛋白质）互作 × 方法(限定深度学习、分子动力学、对接、预测等)
-# 对象x互作（重点性质）x方法
-topic: idp-interaction-ai
+# 蛋白质–DNA 互作 × 计算（AI ∪ 分子模拟）——三维基因组/染色质组织背景下，侧重转录因子
+# 对象 = (A) 3D 基因组/染色质组织 ∪ (B) DNA–蛋白质互作/转录调控（并集，两个都算）
+# 方法 = 深度学习等 AI ∪ 分子动力学/模拟（不用裸 docking——只撞小分子虚拟筛选噪声）
+# ⚠️ 一些调整：DNA-蛋白质互作 我们更关注「结合/结合位点/cis-regulatory/调控元件/可及性/regulatory genomics/enhancer-promoter」等互作中心词，而不是裸 transcription factor*/gene regulation/enhancer*/promoter*，因为后者会把多组学+ML 预后、天然产物网络药理学拉进来，噪声大
+# 至于方法层面：目前暂时略去docking
+topic: protein-dna-ai
 
 # 抓取时间窗口（天），每周自动跑默认 7；手动跑可改 1
+# PubMed 用 [edat]（收录日期）过滤，每篇只在收录周出现一次，无需重叠窗口/去重
 window_days: 7
 
 # PubMed 的 ENTREZ_EMAIL（必填）/ NCBI_API_KEY（可选）从环境变量读，不写进文件
@@ -12,217 +16,285 @@ window_days: 7
 
 platforms:
   pubmed:
-    # 无序/相分离 ∪ × 互作 × 方法(限定)，词干 * 在引号短语末尾有效（实测单复数召回翻倍，注意单复数tiab是精确匹配的）
-    # ⚠️ 裸 "phase separation" 会命中材料/非生物（催化、沥青、光伏），故限定其必须同时出现蛋白类词；在蛋白质互作中加上凝聚物、相分离主题是必要的，当然可能会使搜得文献减少
-    # query: '(interaction*[tiab] OR interact*[tiab] OR bind*[tiab] OR complex*[tiab] OR partner*[tiab] OR "protein-protein interaction*"[tiab]) AND ("deep learning"[tiab] OR "machine learning"[tiab] OR "neural network*"[tiab] OR "graph neural network*"[tiab] OR transformer*[tiab] OR "language model*"[tiab] OR "molecular dynamics"[tiab] OR simulation*[tiab] OR docking[tiab] OR alphafold[tiab] OR "binding affinity"[tiab] OR prediction*[tiab])'
-    # 注意先收集mesh条目，再收集tiab
-    # mesh也许对最新文献不够及时，tiab是精确匹配，mesh是词义匹配，二者互补（mesh适合长期）
+    # 对象(A∪B) × 方法，两段式。Mesh 受标引时滞影响（最新文献不及时），周窗召回主要靠 tiab firing
+    #   A（3D 基因组/染色质组织）：染色质结构/凝聚体相关 Mesh + Hi-C/3C、TAD、loop、CTCF/cohesin、
+    #     A/B compartment、nuclear organization 等 tiab —— 词本身精确、几乎不带预后噪声
+    #   B（TF–DNA 互作/转录调控）：仅收「结合/结合位点/cis-regulatory/调控元件/可及性/regulatory genomics/
+    #     enhancer-promoter/CTCF」等互作中心词；不装 Mesh Transcription Factors/DNA-Binding Proteins，也不用裸 TF/promoter/enhancer
     query: >
-      ( "Intrinsically Disordered Proteins"[Mesh] 
-      OR "intrinsically disordered protein*"[tiab] 
-      OR "intrinsically disordered region*"[tiab] 
-      OR "intrinsically disordered"[tiab] 
-      OR IDP[tiab] 
-      OR IDPs[tiab] 
-      OR IDR[tiab] 
-      OR IDRs[tiab] 
-      OR "disordered protein*"[tiab] 
-      OR "natively unfolded"[tiab] 
-      OR "unstructured protein*"[tiab] 
-      OR (LLPS[tiab] OR "biomolecular condensate*"[tiab] OR "phase separation"[tiab] AND (protein*[tiab] OR peptide*[tiab] OR biomolecular[tiab]))) 
+      ( "Chromatin"[Mesh]
+      OR "Chromatin Assembly and Disassembly"[Mesh]
+      OR "Nucleosomes"[Mesh]
+      OR "CCCTC-Binding Factor"[Mesh]
+      OR "Cohesins"[Mesh]
+      OR "Chromosomal Proteins, Non-Histone"[Mesh]
+      OR "3D genome*"[tiab]
+      OR "three-dimensional genome"[tiab]
+      OR "genome organization"[tiab]
+      OR "genome architecture"[tiab]
+      OR "genome folding"[tiab]
+      OR "nuclear organization"[tiab]
+      OR "nuclear architecture"[tiab]
+      OR "chromatin organization"[tiab]
+      OR "chromatin architecture"[tiab]
+      OR "chromatin conformation"[tiab]
+      OR "chromatin topology"[tiab]
+      OR "chromatin structure*"[tiab]
+      OR "chromatin loop*"[tiab]
+      OR "chromatin interaction*"[tiab]
+      OR "chromatin domain*"[tiab]
+      OR "topologically associating domain*"[tiab]
+      OR "A/B compartment*"[tiab]
+      OR "chromosome conformation capture"[tiab]
+      OR "Hi-C"[tiab]
+      OR HiChIP[tiab]
+      OR "loop extrusion"[tiab]
+      OR "loop-extrusion"[tiab]
+      OR CTCF[tiab]
+      OR cohesin*[tiab]
+      OR "cis-regulatory"[tiab]
+      OR "cis-regulatory element*"[tiab]
+      OR "regulatory element*"[tiab]
+      OR "regulatory genomics"[tiab]
+      OR "chromatin accessibility"[tiab]
+      OR "enhancer-promoter"[tiab]
+      OR "promoter-enhancer"[tiab])
       AND 
-      ("Protein Interaction Maps"[Mesh] 
-      OR "Protein Interaction Domains and Motifs"[Mesh] 
-      OR interaction*[tiab] 
-      OR interact*[tiab] 
-      OR bind*[tiab] 
-      OR complex*[tiab] 
-      OR partner*[tiab] 
-      OR interface*[tiab] 
-      OR "protein-protein interaction*"[tiab]) 
-      AND 
-      ("Artificial Intelligence"[Mesh] 
-      OR "Deep Learning"[Mesh] 
-      OR "Machine Learning"[Mesh] 
-      OR "Neural Networks, Computer"[Mesh] 
-      OR "artificial intelligence"[tiab] 
-      OR "deep learning"[tiab] 
-      OR "machine learning"[tiab] 
-      OR "neural network*"[tiab] 
-      OR "transformer*"[tiab] 
-      OR "language model*"[tiab] 
-      OR "diffusion model*"[tiab] 
-      OR "generative*"[tiab] 
-      OR "graph neural network*"[tiab] 
-      OR "flow matching"[tiab] 
-      OR "molecular dynamics"[tiab] 
-      OR simulation*[tiab] 
-      OR docking[tiab] 
-      OR "binding affinity"[tiab] 
-      OR prediction*[tiab] 
-      OR alphafold[tiab] 
-      OR esmfold*[tiab] 
-      OR rosetta*[tiab] )
+      ( "Transcription Factors"[Mesh]
+      OR "DNA-Binding Proteins"[Mesh]
+      OR "Zinc Fingers"[Mesh]
+      OR "CYS2-HIS2 Zinc Fingers"[Mesh]
+      OR "transcription factor*"[tiab]
+      OR "transcription factor binding"[tiab]
+      OR "transcription factor binding site*"[tiab]
+      OR "TF binding"[tiab]
+      OR TFBS[tiab]
+      OR "DNA binding"[tiab]
+      OR "DNA-binding"[tiab]
+      OR "DNA-binding protein*"[tiab]
+      OR "DNA protein interaction*"[tiab]
+      OR "DNA protein binding"[tiab]
+      OR "DNA-binding factor*"[tiab]
+      OR "DNA-binding site*"[tiab]                                                                                                                                
+      OR "DNA binding site*"[tiab]                                                                                                                                
+      OR "protein-DNA binding"[tiab]                                                                                                                              
+      OR "protein-DNA binding site*"[tiab]
+      )
+      AND
+      ( "Artificial Intelligence"[Mesh]
+      OR "Deep Learning"[Mesh]
+      OR "Machine Learning"[Mesh]
+      OR "Neural Networks, Computer"[Mesh]
+      OR "artificial intelligence"[tiab]
+      OR "deep learning"[tiab]
+      OR "machine learning"[tiab]
+      OR "neural network*"[tiab]
+      OR "graph neural network*"[tiab]
+      OR "convolutional neural network*"[tiab]
+      OR transformer*[tiab]
+      OR "language model*"[tiab]
+      OR "foundation model*"[tiab]
+      OR "diffusion model*"[tiab]
+      OR "generative*"[tiab]
+      OR "flow matching"[tiab]
+      OR alphafold*[tiab]
+      OR "molecular dynamics"[tiab]
+      OR simulation*[tiab])
   arxiv:
     # arXiv 原生布尔：写 all: 字段形式原样透传（无 : 的纯词会被强制全 AND，OR 失效）
-    # 实测：IDP/LLPS 之类缩写容易与非声明科学类撞词，导致假阳性检索
-    # LLPS、凝聚物之类全删
-    # max_results：native 后端不加会翻整周全部命中 → 限速挂起；100/每周 足够覆盖
-    # ⚠️ 另外 加了互作限定之后，arXiv 相关性候选数大幅下降，也许会一周都没有，但是本topic本来就是搜集互作项，即使命中少，也要保留
+    # ⚠️ 本课题 arXiv 用「精确短语精查腿」（2026-09-09 实测）：
+    #   宽口径（含 enhancer/promoter/transcription factor/gene regulation 泛词 + 长 OR 串）→ 周 250(cap) 近 100% 离题
+    #   （arXiv all: 对 regulator 泛词不可靠 + 超长 OR 触发降级返回，命中超导/RAG/光伏等）；
+    #   精确短语腿周命中 0-5 无噪声（该课题预印本主力在 bioRxiv，arXiv 周更本无货，偶有精确命中即可）
+    # max_results：native 后端不加会翻整周全部命中 → 限速挂起；精确腿周 ~0-5，100 足够
     max_results: 100
-    query: > 
-      (all:"intrinsically disordered protein" 
-      OR all:"intrinsically disordered region" 
-      OR all:"intrinsically disordered" 
-      OR all:"disordered protein" 
-      OR all:"natively unfolded"
-      OR all:"unstructured protein" 
-      OR all:"biomolecular condensate")
-      AND 
-      (all:"protein-protein interaction" 
-      OR all:interaction 
-      OR all:interact
-      OR all:bind
-      OR all:complex
-      OR all:partner 
-      OR all:interface)
-      AND 
-      (all:"deep learning" 
-      OR all:"machine learning" 
-      OR all:"neural network"
-      OR all:"graph neural network" 
-      OR all:"language model"
-      OR all:transformer 
-      OR all:"diffusion model" 
-      OR all:generative 
-      OR all:"flow matching"
-      OR all:"molecular dynamics" 
-      OR all:simulation 
-      OR all:docking 
-      OR all:"binding affinity"
-      OR all:prediction
-      OR all:alphafold 
-      OR all:esmfold 
-      OR all:rosetta)
-  biorxiv:
-    # 与 arXiv 同构的括号三段式（对象×互作×方法，纯短语、无字段前缀）
-    # 实测（2026-09-07）：
-    # 1. 必须保留括号、不能改平铺DNF：Europe PMC（Lucene）对无括号的 AND/OR 混排会拍平错乱（同一逻辑 query 实测：平铺 DNF=1 命中 vs 括号三段式=13 命中）→ 平铺只在 Crossref 客户端对、却弄坏唯一严格的 Europe PMC
-    # 括号三段式 = 把正确性押在 Europe PMC 上，是最优解
-    # 2. Europe PMC：原生支持括号布尔、严格三段式，实测精确吃满 query
-    #  Crossref 服务端 query.bibliographic：词袋相关性排序，无布尔能力（硬墙，改 pyPaperFlow 源码也补不了）
-    #  Crossref 客户端 basic_boolean_text_match：括号当字面词 → 查询退化成 25 词 OR（超集/过召回，只多不漏）
-    #  4 个边界短语因括号粘词落入永不命中子句（deep learning / biomolecular condensate / interface / rosetta），
-    #  biorxiv/medrxiv 由 Europe PMC 严格补上，仅 chemrxiv 暴露（窗内近 0）
-    # 3. 目前策略: Europe PMC 严格 + Crossref 超集 + 每周 Zotero 人工筛选 = 最优，维持括号三段式
     query: >
-      ("intrinsically disordered protein"
-      OR "intrinsically disordered region"
-      OR "intrinsically disordered"
-      OR "disordered protein"
-      OR "natively unfolded"
-      OR "unstructured protein"
-      OR "biomolecular condensate")
+      (all:"3D genome"
+      OR all:"genome organization"
+      OR all:"genome architecture"
+      OR all:"chromatin organization"
+      OR all:"chromatin architecture"
+      OR all:"chromatin conformation"
+      OR all:"chromatin loop"
+      OR all:"chromatin interaction"
+      OR all:"topologically associating domain"
+      OR all:"chromosome conformation capture"
+      OR all:"Hi-C"
+      OR all:HiChIP
+      OR all:CTCF
+      OR all:cohesin
+      OR all:"loop extrusion"
+      OR all:"enhancer-promoter"
+      OR all:"transcription factor binding"
+      OR all:"TF binding"
+      OR all:"DNA binding"
+      OR all:"binding site"
+      OR all:"cis-regulatory"
+      OR all:"regulatory element"
+      OR all:"chromatin accessibility"
+      OR all:"gene regulation"
+      OR all:"transcriptional regulation"
+      OR all:"gene regulatory network")
       AND
-      ("protein-protein interaction"
-      OR interaction
-      OR interact
-      OR bind
-      OR complex
-      OR partner
-      OR interface)
+      (all:"deep learning"
+      OR all:"machine learning"
+      OR all:"neural network"
+      OR all:"graph neural network"
+      OR all:transformer
+      OR all:"language model"
+      OR all:"foundation model"
+      OR all:"diffusion model"
+      OR all:generative
+      OR all:alphafold
+      OR all:"molecular dynamics"
+      OR all:simulation)
+  biorxiv:
+    # 与 arXiv 同构的括号两段式（对象 A∪B × 方法；纯短语、无字段前缀）。实测（2026-09-07，见 idp-interaction-ai）：
+    #   为什么必须保留括号、不能改平铺 DNF：Europe PMC（Lucene）对无括号的 AND/OR 混排会拍平错乱
+    #   → 括号两段式 = 把正确性押在 Europe PMC 上，是最优解
+    #   Europe PMC 严格 + Crossref 超集 + 每周 Zotero 筛 = 最优，维持括号两段式
+    #   对象短语与 pubmed tiab 同源（3D/染色质 A ∪ 结合/调控元件 B 中心词），方法 = AI ∪ 模拟
+    query: >
+      ("3D genome"
+      OR "three-dimensional genome"
+      OR "genome organization"
+      OR "genome architecture"
+      OR "genome folding"
+      OR "nuclear organization"
+      OR "chromatin organization"
+      OR "chromatin architecture"
+      OR "chromatin conformation"
+      OR "chromatin structure"
+      OR "chromatin loop"
+      OR "chromatin interaction"
+      OR "chromatin domain"
+      OR "topologically associating domain"
+      OR "chromosome conformation capture"
+      OR "Hi-C"
+      OR HiChIP
+      OR CTCF
+      OR cohesin
+      OR condensin
+      OR "loop extrusion"
+      OR "DNA binding"
+      OR "TF binding"
+      OR TFBS
+      OR "binding site"
+      OR "cis-regulatory"
+      OR "regulatory element"
+      OR "regulatory genomics"
+      OR "chromatin accessibility"
+      OR "gene regulatory network"
+      OR "enhancer-promoter")
       AND
       ("deep learning"
       OR "machine learning"
       OR "neural network"
       OR "graph neural network"
-      OR "language model"
       OR transformer
+      OR "language model"
+      OR "foundation model"
       OR "diffusion model"
       OR generative
-      OR "flow matching"
-      OR "molecular dynamics"
-      OR simulation
-      OR docking
-      OR "binding affinity"
-      OR prediction
       OR alphafold
-      OR esmfold
-      OR rosetta)
+      OR "molecular dynamics"
+      OR simulation)
   medrxiv:
     # 与 bioRxiv 同串（同一 BioRxivFetcher，platform=medrxiv）
-    # 双平台混合：Europe PMC 严格 + Crossref 超集
+    # 混合：Europe PMC 严格 + Crossref 超集，
+    # 每周 Zotero 筛（详见 bioRxiv 注释：为何不能改平铺 DNF、边界短语如何补齐）
+    # 蛋白质–DNA 计算在 medRxiv 本就稀疏，空属正常
     query: >
-      ("intrinsically disordered protein"
-      OR "intrinsically disordered region"
-      OR "intrinsically disordered"
-      OR "disordered protein"
-      OR "natively unfolded"
-      OR "unstructured protein"
-      OR "biomolecular condensate")
-      AND
-      ("protein-protein interaction"
-      OR interaction
-      OR interact
-      OR bind
-      OR complex
-      OR partner
-      OR interface)
+      ("3D genome"
+      OR "three-dimensional genome"
+      OR "genome organization"
+      OR "genome architecture"
+      OR "genome folding"
+      OR "nuclear organization"
+      OR "chromatin organization"
+      OR "chromatin architecture"
+      OR "chromatin conformation"
+      OR "chromatin structure"
+      OR "chromatin loop"
+      OR "chromatin interaction"
+      OR "chromatin domain"
+      OR "topologically associating domain"
+      OR "chromosome conformation capture"
+      OR "Hi-C"
+      OR HiChIP
+      OR CTCF
+      OR cohesin
+      OR condensin
+      OR "loop extrusion"
+      OR "DNA binding"
+      OR "TF binding"
+      OR TFBS
+      OR "binding site"
+      OR "cis-regulatory"
+      OR "regulatory element"
+      OR "regulatory genomics"
+      OR "chromatin accessibility"
+      OR "gene regulatory network"
+      OR "enhancer-promoter")
       AND
       ("deep learning"
       OR "machine learning"
       OR "neural network"
       OR "graph neural network"
-      OR "language model"
       OR transformer
+      OR "language model"
+      OR "foundation model"
       OR "diffusion model"
       OR generative
-      OR "flow matching"
-      OR "molecular dynamics"
-      OR simulation
-      OR docking
-      OR "binding affinity"
-      OR prediction
       OR alphafold
-      OR esmfold
-      OR rosetta)
+      OR "molecular dynamics"
+      OR simulation)
   chemrxiv:
-    # 与 bioRxiv 同串（ChemRxiv Crossref prefix 10.26434）
-    # chemRxiv 只有 Crossref，Europe PMC 不收录
-    # （实测前缀 10.26434 无命中）→ 括号三段式无法严格，是唯一无 Europe PMC 覆盖的，4 个边界短语
-    # （deep learning / biomolecular condensate / interface / rosetta）在 Crossref 客户端会漏，但窗内近 0
-    # 目前策略：维持三段式语义对齐、接受噪声，每周 Zotero 筛
+    # 与 bioRxiv 同串（ChemRxiv Crossref prefix 10.26434）。chemRxiv 只有 Crossref，Europe PMC 不收录
+    # （实测前缀 10.26434 无命中）→ 括号两段式无法严格。是唯一无 Europe PMC 覆盖的，
+    # 接受噪声，每周 Zotero 筛。不能改平铺 DNF（Europe PMC 会拍平错乱）
     query: >
-      ("intrinsically disordered protein"
-      OR "intrinsically disordered region"
-      OR "intrinsically disordered"
-      OR "disordered protein"
-      OR "natively unfolded"
-      OR "unstructured protein"
-      OR "biomolecular condensate")
-      AND
-      ("protein-protein interaction"
-      OR interaction
-      OR interact
-      OR bind
-      OR complex
-      OR partner
-      OR interface)
+      ("3D genome"
+      OR "three-dimensional genome"
+      OR "genome organization"
+      OR "genome architecture"
+      OR "genome folding"
+      OR "nuclear organization"
+      OR "chromatin organization"
+      OR "chromatin architecture"
+      OR "chromatin conformation"
+      OR "chromatin structure"
+      OR "chromatin loop"
+      OR "chromatin interaction"
+      OR "chromatin domain"
+      OR "topologically associating domain"
+      OR "chromosome conformation capture"
+      OR "Hi-C"
+      OR HiChIP
+      OR CTCF
+      OR cohesin
+      OR condensin
+      OR "loop extrusion"
+      OR "DNA binding"
+      OR "TF binding"
+      OR TFBS
+      OR "binding site"
+      OR "cis-regulatory"
+      OR "regulatory element"
+      OR "regulatory genomics"
+      OR "chromatin accessibility"
+      OR "gene regulatory network"
+      OR "enhancer-promoter")
       AND
       ("deep learning"
       OR "machine learning"
       OR "neural network"
       OR "graph neural network"
-      OR "language model"
       OR transformer
+      OR "language model"
+      OR "foundation model"
       OR "diffusion model"
       OR generative
-      OR "flow matching"
-      OR "molecular dynamics"
-      OR simulation
-      OR docking
-      OR "binding affinity"
-      OR prediction
       OR alphafold
-      OR esmfold
-      OR rosetta)
+      OR "molecular dynamics"
+      OR simulation)
