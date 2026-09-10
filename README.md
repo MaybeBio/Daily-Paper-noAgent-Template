@@ -35,9 +35,9 @@
 
 | 步骤 | 你要做的 | 具体内容 |
 |---|---|---|
-| **1 · 换领域** | 编辑 `config.yaml` | 改 `topic` 短名、`window_days` 窗口、各平台 `query` 检索式（示例已按「对象 × 方法」两段式写好，可对照改写） |
-| **2 · 设定时与密钥** | 配置 workflow | 确认 `monitor.yml` 的 cron；在 **Settings → Secrets and variables → Actions → Repository secrets** 添加 `ENTREZ_EMAIL`（必填）与 `NCBI_API_KEY`（可选） |
-| **3 · 每周收报** | 等待或手动触发 | 有新文献时自动开一条 **Issue 周报**，按平台列出标题 / 作者 / 日期 /(摘要太长暂时不在issue落地)，仓库里点开即读 |
+| **1 · 换领域** | 编辑 [`config.yaml`](./config.yaml) | 改 `topic` 短名、`window_days` 窗口、各平台 `query` 检索式（示例已按「对象 × 方法」两段式写好，可对照改写） |
+| **2 · 设定时与密钥** | 配置 [`workflow`](./.github/workflows/monitor.yml) | 确认 `monitor.yml` 的 cron；在 **Settings → Secrets and variables → Actions → Repository secrets** 添加 `ENTREZ_EMAIL`（必填）与 `NCBI_API_KEY`（可选） |
+| **3 · 每周收报** | 等待或手动触发actions | 有新文献时自动开一条 **Issue 周报**，按平台列出标题 / 作者 / 日期 /(摘要太长暂时不在issue落地)，仓库里点开即读 |
 
 > 推送到 `main` 后可用仓库 **Actions** 页的 `workflow_dispatch` 手动跑一次试运行；想先本地验证见「本地运行与调试」。
 
