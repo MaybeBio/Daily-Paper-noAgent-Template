@@ -27,8 +27,24 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "monitor: capture $(date +%F)" || echo "no changes"
-          git push
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "monitor: capture $(date +%F)"
+            # main may have advanced (manual push / another run) since checkout;
+            # rebase our commit on top before pushing so the push is a fast-forward.
+            # Retry push to tolerate transient remote failures.
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash
+              if git push; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                exit 1
+              fi
+              sleep $((attempt * 5))
+            done
+          fi
       - name: open issue
         env:
           GH_TOKEN: ${{ github.token }}
